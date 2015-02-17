@@ -94,7 +94,7 @@
 			<?php echo $this->Html->link($socio['Categoria']['id'], array('controller' => 'categorias', 'action' => 'view', $socio['Categoria']['id'])); ?>
 		</td>
 		<td>
-			<?php echo $this->Html->link($socio['Cobrador']['name'], array('controller' => 'cobradors', 'action' => 'view', $socio['Cobrador']['id'])); ?>
+			<?php echo $this->Html->link($socio['Cobrador']['name'], array('controller' => 'cobradores', 'action' => 'view', $socio['Cobrador']['id'])); ?>
 		</td>
 		<td>
 			<?php echo $this->Html->link($socio['Tipocambio']['name'], array('controller' => 'tipocambios', 'action' => 'view', $socio['Tipocambio']['id'])); ?>
@@ -136,8 +136,8 @@
 		<li><?php echo $this->Html->link(__('New Localidad'), array('controller' => 'localidades', 'action' => 'add')); ?> </li>
 		<li><?php echo $this->Html->link(__('List Categorias'), array('controller' => 'categorias', 'action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Categoria'), array('controller' => 'categorias', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Cobradors'), array('controller' => 'cobradors', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Cobrador'), array('controller' => 'cobradors', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Cobradores'), array('controller' => 'cobradores', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Cobrador'), array('controller' => 'cobradores', 'action' => 'add')); ?> </li>
 		<li><?php echo $this->Html->link(__('List Tipocambios'), array('controller' => 'tipocambios', 'action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Tipocambio'), array('controller' => 'tipocambios', 'action' => 'add')); ?> </li>
 		<li><?php echo $this->Html->link(__('List Tipos'), array('controller' => 'tipos', 'action' => 'index')); ?> </li>

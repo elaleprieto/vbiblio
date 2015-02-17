@@ -1,4 +1,4 @@
-<div class="cobradors view">
+<div class="cobradores view">
 <h2><?php echo __('Cobrador'); ?></h2>
 	<dl>
 		<dt><?php echo __('Id'); ?></dt>
@@ -38,7 +38,7 @@
 	<ul>
 		<li><?php echo $this->Html->link(__('Edit Cobrador'), array('action' => 'edit', $cobrador['Cobrador']['id'])); ?> </li>
 		<li><?php echo $this->Form->postLink(__('Delete Cobrador'), array('action' => 'delete', $cobrador['Cobrador']['id']), array(), __('Are you sure you want to delete # %s?', $cobrador['Cobrador']['id'])); ?> </li>
-		<li><?php echo $this->Html->link(__('List Cobradors'), array('action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Cobradores'), array('action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Cobrador'), array('action' => 'add')); ?> </li>
 		<li><?php echo $this->Html->link(__('List Socios'), array('controller' => 'socios', 'action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Socio'), array('controller' => 'socios', 'action' => 'add')); ?> </li>

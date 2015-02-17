@@ -57,11 +57,11 @@ class SociosController extends AppController {
 		}
 		$localidades = $this->Socio->Localidad->find('list');
 		$categorias = $this->Socio->Categoria->find('list');
-		$cobradors = $this->Socio->Cobrador->find('list');
+		$cobradores = $this->Socio->Cobrador->find('list');
 		$tipocambios = $this->Socio->Tipocambio->find('list');
 		$tipos = $this->Socio->Tipo->find('list');
 		$tipodocs = $this->Socio->Tipodoc->find('list');
-		$this->set(compact('localidades', 'categorias', 'cobradors', 'tipocambios', 'tipos', 'tipodocs'));
+		$this->set(compact('localidades', 'categorias', 'cobradores', 'tipocambios', 'tipos', 'tipodocs'));
 	}
 
 /**
@@ -88,11 +88,11 @@ class SociosController extends AppController {
 		}
 		$localidades = $this->Socio->Localidad->find('list');
 		$categorias = $this->Socio->Categoria->find('list');
-		$cobradors = $this->Socio->Cobrador->find('list');
+		$cobradores = $this->Socio->Cobrador->find('list');
 		$tipocambios = $this->Socio->Tipocambio->find('list');
 		$tipos = $this->Socio->Tipo->find('list');
 		$tipodocs = $this->Socio->Tipodoc->find('list');
-		$this->set(compact('localidades', 'categorias', 'cobradors', 'tipocambios', 'tipos', 'tipodocs'));
+		$this->set(compact('localidades', 'categorias', 'cobradores', 'tipocambios', 'tipos', 'tipodocs'));
 	}
 
 /**

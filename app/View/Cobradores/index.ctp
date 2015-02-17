@@ -1,5 +1,5 @@
-<div class="cobradors index">
-	<h2><?php echo __('Cobradors'); ?></h2>
+<div class="cobradores index">
+	<h2><?php echo __('Cobradores'); ?></h2>
 	<table cellpadding="0" cellspacing="0">
 	<thead>
 	<tr>
@@ -13,7 +13,7 @@
 	</tr>
 	</thead>
 	<tbody>
-	<?php foreach ($cobradors as $cobrador): ?>
+	<?php foreach ($cobradores as $cobrador): ?>
 	<tr>
 		<td><?php echo h($cobrador['Cobrador']['id']); ?>&nbsp;</td>
 		<td><?php echo h($cobrador['Cobrador']['name']); ?>&nbsp;</td>

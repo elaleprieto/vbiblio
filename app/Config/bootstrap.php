@@ -66,14 +66,14 @@ Inflector::rules('singular', array(
 		'/^(categoria)$/i' => '\1',
 		'/^(provincia)$/i' => '\1',
 	),
-	'irregular' => array('localidades'=>'localidad'),
+	'irregular' => array('cobradores'=>'cobrador', 'localidades'=>'localidad'),
 	'uninflected' => array()
 ));
 Inflector::rules('plural', array(
 	'rules' => array(
 		'/^(categoria)$/i' => '\1s',
 	),
-	'irregular' => array('localidad'=>'localidades'),
+	'irregular' => array('cobrador'=>'cobradores', 'localidad'=>'localidades'),
 	'uninflected' => array()
 ));
 

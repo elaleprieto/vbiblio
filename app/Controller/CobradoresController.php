@@ -1,12 +1,12 @@
 <?php
 App::uses('AppController', 'Controller');
 /**
- * Cobradors Controller
+ * Cobradores Controller
  *
  * @property Cobrador $Cobrador
  * @property PaginatorComponent $Paginator
  */
-class CobradorsController extends AppController {
+class CobradoresController extends AppController {
 
 /**
  * Components
@@ -22,7 +22,7 @@ class CobradorsController extends AppController {
  */
 	public function index() {
 		$this->Cobrador->recursive = 0;
-		$this->set('cobradors', $this->Paginator->paginate());
+		$this->set('cobradores', $this->Paginator->paginate());
 	}
 
 /**
