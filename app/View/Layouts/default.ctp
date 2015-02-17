@@ -27,44 +27,62 @@ $cakeVersion = __d('cake_dev', 'Biblioteca Vigil')
 	</title>
 	<?php
 		echo $this->Html->meta('icon');
-
-		echo $this->Html->css('cake.generic');
-
 		echo $this->fetch('meta');
+
+		echo $this->Html->css(array('/bower_components/bootstrap/dist/css/bootstrap.min.css'
+			, '/bower_components/bootstrap/dist/css/bootstrap-theme.min.css'
+			, 'layouts/default'
+		));
 		echo $this->fetch('css');
-		echo $this->fetch('script');
 	?>
 </head>
 <body>
 	<header>
 		<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 			<div class="container-fluid">
-				<a class="navbar-brand" href="/">SGI</a>
+				<a class="navbar-brand" href="/">Biblioteca Vigil</a>
+				<ul class="nav navbar-nav">
+					<!-- Socios -->
+					<li class="dropdown">
+  						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							Socios<b class="caret"></b>
+						</a>
+						<ul class="dropdown-menu">
+							<li><?php echo $this->Html->link('Nuevo', array('controller' => 'socios', 'action' => 'add')); ?></li>
+							<li><?php echo $this->Html->link('Listar Socios', array('controller' => 'socios', 'action' => 'index')); ?></li>
+						</ul>
+	        		</li>
+	    		</ul>
 				<ul class="nav navbar-nav navbar-right">
 	    			<li><a href="/logout"><span class="glyphicon glyphicon-user"></span> Salir</a></li>
 	    		</ul>
 			</div>
 		</nav>
 	</header>
-	<div id="container">
-		<div id="content">
+	
+	<section class="container-fluid">
+		<?php echo $this->Session->flash(); ?>
+		<?php echo $this->fetch('content'); ?>
+	</section>
+	
+	<footer class="navbar navbar-inverse navbar-fixed-bottom">
+		Sistema de Gestión Biblioteca Vigil
+	</footer>
 
-			<?php echo $this->Session->flash(); ?>
+	<?php
+	echo $this->Html->script(array('/bower_components/jquery/dist/jquery.min'
+		, '/bower_components/bootstrap/dist/js/bootstrap.min.js'
+		, '/bower_components/angular/angular.min.js'
+		, '/bower_components/angular-route/angular-route.min.js'
+		, '/bower_components/angular-resource/angular-resource.min.js'
+		, '/bower_components/angular-bootstrap/ui-bootstrap-tpls.min'
+		, '/bower_components/angular-ui-utils/keypress.min'
+		, 'models'
+		, 'angular/controllers'
+	));
+	echo $this->fetch('script');
+	?>
 
-			<?php echo $this->fetch('content'); ?>
-		</div>
-		<div id="footer">
-			<?php echo $this->Html->link(
-					$this->Html->image('cake.power.gif', array('alt' => $cakeDescription, 'border' => '0')),
-					'http://www.cakephp.org/',
-					array('target' => '_blank', 'escape' => false, 'id' => 'cake-powered')
-				);
-			?>
-			<p>
-				<?php echo $cakeVersion; ?>
-			</p>
-		</div>
-	</div>
 	<?php echo $this->element('sql_dump'); ?>
 </body>
 </html>

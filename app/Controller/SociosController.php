@@ -20,8 +20,8 @@ class SociosController extends AppController {
 	public function isAuthorized($user = null) {
 		$owner_allowed = array();
 		$user_allowed = array();
-		$admin_allowed = array_merge($owner_allowed, $user_allowed, array());
-		$developer_allowed = array_merge($admin_allowed, array('add', 'delete', 'edit', 'index', 'view'));
+		$admin_allowed = array_merge($owner_allowed, $user_allowed, array('add', 'delete', 'edit', 'index', 'view'));
+		$developer_allowed = array_merge($admin_allowed, array());
 
 		# All registered users can:
 		if (in_array($this->action, $user_allowed))
