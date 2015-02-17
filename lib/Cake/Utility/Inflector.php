@@ -443,9 +443,14 @@ class Inflector {
 			return $word;
 		}
 
+		// debug(self::$_singular['rules'], $showHtml = null, $showFrom = true);
+
 		foreach (self::$_singular['rules'] as $rule => $replacement) {
+			// debug(($rule.' - '. $word), $showHtml = null, $showFrom = true);
+			// debug(preg_match($rule, $word), $showHtml = null, $showFrom = true);
 			if (preg_match($rule, $word)) {
 				self::$_cache['singularize'][$word] = preg_replace($rule, $replacement, $word);
+				// debug(self::$_cache['singularize'][$word], $showHtml = null, $showFrom = true);
 				return self::$_cache['singularize'][$word];
 			}
 		}

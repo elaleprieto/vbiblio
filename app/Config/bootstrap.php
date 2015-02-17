@@ -59,6 +59,23 @@ Cache::config('default', array('engine' => 'File'));
  * Inflector::rules('plural', array('rules' => array(), 'irregular' => array(), 'uninflected' => array()));
  *
  */
+Inflector::rules('singular', array(
+	'rules' => array(
+		// '/(.*)as$/i' => '\1a',
+		'/^(cuota)$/i' => '\1',
+		'/^(categoria)$/i' => '\1',
+		'/^(provincia)$/i' => '\1',
+	),
+	'irregular' => array('localidades'=>'localidad'),
+	'uninflected' => array()
+));
+Inflector::rules('plural', array(
+	'rules' => array(
+		'/^(categoria)$/i' => '\1s',
+	),
+	'irregular' => array('localidad'=>'localidades'),
+	'uninflected' => array()
+));
 
 /**
  * Plugins need to be loaded manually, you can either load them one by one or all of them in a single call
