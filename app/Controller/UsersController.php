@@ -1,13 +1,12 @@
 <?php
 App::uses('AppController', 'Controller');
 /**
- * Socios Controller
+ * Users Controller
  *
- * @property Socio $Socio
+ * @property User $User
  * @property PaginatorComponent $Paginator
  */
-class SociosController extends AppController {
-
+class UsersController extends AppController {
 
 	/**************************************************************************************************************
 	* Authentication
@@ -21,7 +20,7 @@ class SociosController extends AppController {
 		$owner_allowed = array();
 		$user_allowed = array();
 		$admin_allowed = array_merge($owner_allowed, $user_allowed, array());
-		$developer_allowed = array_merge($admin_allowed, array('add', 'delete', 'edit', 'index', 'view'));
+		$developer_allowed = array_merge($admin_allowed, array('add', 'edit', 'index', 'delete'));
 
 		# All registered users can:
 		if (in_array($this->action, $user_allowed))
@@ -65,8 +64,30 @@ class SociosController extends AppController {
  * @return void
  */
 	public function index() {
-		$this->Socio->recursive = 0;
-		$this->set('socios', $this->Paginator->paginate());
+		$this->User->recursive = 0;
+		$this->set('users', $this->Paginator->paginate());
+	}
+
+	public function login() {
+		$this -> layout = 'login';
+
+		if ($this->request->is('post')) {
+			if (isset($this->request->data['User'])) {
+				$user = $this->request->data['User'];
+
+				if ($this->Auth->login()) {
+					$this->redirect($this->Auth->redirect());
+				}
+				$this->redirect('/');
+			}
+			$this->Session->setFlash(__('Invalid username or password, try again'));
+			$this->redirect('/');
+		}
+	}
+
+	public function logout() {
+		# Logout según Cakephp
+		$this->redirect($this->Auth->logout());
 	}
 
 /**
@@ -77,11 +98,11 @@ class SociosController extends AppController {
  * @return void
  */
 	public function view($id = null) {
-		if (!$this->Socio->exists($id)) {
-			throw new NotFoundException(__('Invalid socio'));
+		if (!$this->User->exists($id)) {
+			throw new NotFoundException(__('Invalid user'));
 		}
-		$options = array('conditions' => array('Socio.' . $this->Socio->primaryKey => $id));
-		$this->set('socio', $this->Socio->find('first', $options));
+		$options = array('conditions' => array('User.' . $this->User->primaryKey => $id));
+		$this->set('user', $this->User->find('first', $options));
 	}
 
 /**
@@ -91,21 +112,16 @@ class SociosController extends AppController {
  */
 	public function add() {
 		if ($this->request->is('post')) {
-			$this->Socio->create();
-			if ($this->Socio->save($this->request->data)) {
-				$this->Session->setFlash(__('The socio has been saved.'));
+			$this->User->create();
+			if ($this->User->save($this->request->data)) {
+				$this->Session->setFlash(__('The user has been saved.'));
 				return $this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The socio could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('The user could not be saved. Please, try again.'));
 			}
 		}
-		$localidades = $this->Socio->Localidad->find('list');
-		$categorias = $this->Socio->Categoria->find('list');
-		$cobradores = $this->Socio->Cobrador->find('list');
-		$tipocambios = $this->Socio->Tipocambio->find('list');
-		$tipos = $this->Socio->Tipo->find('list');
-		$tipodocs = $this->Socio->Tipodoc->find('list');
-		$this->set(compact('localidades', 'categorias', 'cobradores', 'tipocambios', 'tipos', 'tipodocs'));
+		$rols = $this->User->Rol->find('list');
+		$this->set(compact('rols'));
 	}
 
 /**
@@ -116,27 +132,22 @@ class SociosController extends AppController {
  * @return void
  */
 	public function edit($id = null) {
-		if (!$this->Socio->exists($id)) {
-			throw new NotFoundException(__('Invalid socio'));
+		if (!$this->User->exists($id)) {
+			throw new NotFoundException(__('Invalid user'));
 		}
 		if ($this->request->is(array('post', 'put'))) {
-			if ($this->Socio->save($this->request->data)) {
-				$this->Session->setFlash(__('The socio has been saved.'));
+			if ($this->User->save($this->request->data)) {
+				$this->Session->setFlash(__('The user has been saved.'));
 				return $this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The socio could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('The user could not be saved. Please, try again.'));
 			}
 		} else {
-			$options = array('conditions' => array('Socio.' . $this->Socio->primaryKey => $id));
-			$this->request->data = $this->Socio->find('first', $options);
+			$options = array('conditions' => array('User.' . $this->User->primaryKey => $id));
+			$this->request->data = $this->User->find('first', $options);
 		}
-		$localidades = $this->Socio->Localidad->find('list');
-		$categorias = $this->Socio->Categoria->find('list');
-		$cobradores = $this->Socio->Cobrador->find('list');
-		$tipocambios = $this->Socio->Tipocambio->find('list');
-		$tipos = $this->Socio->Tipo->find('list');
-		$tipodocs = $this->Socio->Tipodoc->find('list');
-		$this->set(compact('localidades', 'categorias', 'cobradores', 'tipocambios', 'tipos', 'tipodocs'));
+		$rols = $this->User->Rol->find('list');
+		$this->set(compact('rols'));
 	}
 
 /**
@@ -147,15 +158,15 @@ class SociosController extends AppController {
  * @return void
  */
 	public function delete($id = null) {
-		$this->Socio->id = $id;
-		if (!$this->Socio->exists()) {
-			throw new NotFoundException(__('Invalid socio'));
+		$this->User->id = $id;
+		if (!$this->User->exists()) {
+			throw new NotFoundException(__('Invalid user'));
 		}
 		$this->request->allowMethod('post', 'delete');
-		if ($this->Socio->delete()) {
-			$this->Session->setFlash(__('The socio has been deleted.'));
+		if ($this->User->delete()) {
+			$this->Session->setFlash(__('The user has been deleted.'));
 		} else {
-			$this->Session->setFlash(__('The socio could not be deleted. Please, try again.'));
+			$this->Session->setFlash(__('The user could not be deleted. Please, try again.'));
 		}
 		return $this->redirect(array('action' => 'index'));
 	}

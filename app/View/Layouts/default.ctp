@@ -14,8 +14,8 @@
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
 
-$cakeDescription = __d('cake_dev', 'Vigil');
-$cakeVersion = __d('cake_dev', 'Biblioteca %s', Configure::version())
+$cakeDescription = __d('cake_dev', 'Biblioteca Vigil');
+$cakeVersion = __d('cake_dev', 'Biblioteca Vigil')
 ?>
 <!DOCTYPE html>
 <html>
@@ -36,10 +36,17 @@ $cakeVersion = __d('cake_dev', 'Biblioteca %s', Configure::version())
 	?>
 </head>
 <body>
+	<header>
+		<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="/">SGI</a>
+				<ul class="nav navbar-nav navbar-right">
+	    			<li><a href="/logout"><span class="glyphicon glyphicon-user"></span> Salir</a></li>
+	    		</ul>
+			</div>
+		</nav>
+	</header>
 	<div id="container">
-		<div id="header">
-			<h1><?php echo $this->Html->link($cakeDescription, 'http://cakephp.org'); ?></h1>
-		</div>
 		<div id="content">
 
 			<?php echo $this->Session->flash(); ?>
