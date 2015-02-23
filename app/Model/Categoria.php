@@ -6,6 +6,7 @@ App::uses('AppModel', 'Model');
  * @property Socio $Socio
  */
 class Categoria extends AppModel {
+	public $displayField = 'descripcion';
 
 /**
  * Validation rules
