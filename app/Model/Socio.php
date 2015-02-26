@@ -13,6 +13,11 @@ App::uses('AppModel', 'Model');
  * @property Recibo $Recibo
  */
 class Socio extends AppModel {
+	public $displayField = 'name';
+	public $order = "name";
+	public $virtualFields = array(
+		'name' => "CONCAT(UPPER(Socio.apellido), ', ', Socio.nombre)"
+	);
 
 /**
  * Validation rules
@@ -207,5 +212,17 @@ class Socio extends AppModel {
 			'counterQuery' => ''
 		)
 	);
+
+
+	public function afterFind($results, $primary = false) {
+		foreach ($results as $key => $val) {
+			if (isset($val['Socio']['name'])) {
+				# "APELLIDO, nombre nombre" retorna "APELLIDO, Nombre Nombre"
+				$newName = explode(', ', $val['Socio']['name']);
+				$results[$key]['Socio']['name'] = $newName[0] . ', ' . ucwords(strtolower($newName[1]));
+			}
+		}
+		return $results;
+	}
 
 }

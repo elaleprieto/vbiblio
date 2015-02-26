@@ -31,6 +31,7 @@ $cakeVersion = __d('cake_dev', 'Biblioteca Vigil')
 
 		echo $this->Html->css(array('/bower_components/bootstrap/dist/css/bootstrap.min.css'
 			, '/bower_components/bootstrap/dist/css/bootstrap-theme.min.css'
+			, '/bower_components/fontawesome/css/font-awesome.min.css'
 			, 'layouts/default'
 		));
 		echo $this->fetch('css');
@@ -44,18 +45,28 @@ $cakeVersion = __d('cake_dev', 'Biblioteca Vigil')
 				<ul class="nav navbar-nav">
 					<!-- Socios -->
 					<li class="dropdown">
-  						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
 							Socios<b class="caret"></b>
 						</a>
 						<ul class="dropdown-menu">
 							<li><?php echo $this->Html->link('Nuevo', array('controller' => 'socios', 'action' => 'add')); ?></li>
 							<li><?php echo $this->Html->link('Listar Socios', array('controller' => 'socios', 'action' => 'index')); ?></li>
 						</ul>
-	        		</li>
+					</li>
+					<!-- Cuotas -->
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							Cuotas<b class="caret"></b>
+						</a>
+						<ul class="dropdown-menu">
+							<li><?php echo $this->Html->link('Nuevo', array('controller' => 'cuotas', 'action' => 'add')); ?></li>
+							<li><?php echo $this->Html->link('Listar Cuotas', array('controller' => 'cuotas', 'action' => 'index')); ?></li>
+						</ul>
+					</li>
 	    		</ul>
 				<ul class="nav navbar-nav navbar-right">
 	    			<li><a href="/logout"><span class="glyphicon glyphicon-user"></span> Salir</a></li>
-	    		</ul>
+				</ul>
 			</div>
 		</nav>
 	</header>

@@ -1,18 +1,18 @@
-<div class="cuotas index">
+<?php //debug($cuotas, $showHtml = null, $showFrom = true) ?><div class="cuotas index">
 	<h2><?php echo __('Cuotas'); ?></h2>
-	<table cellpadding="0" cellspacing="0">
+	<table cellpadding="0" cellspacing="0" class="table table-striped">
 	<thead>
 	<tr>
 			<th><?php echo $this->Paginator->sort('id'); ?></th>
 			<th><?php echo $this->Paginator->sort('importe'); ?></th>
 			<th><?php echo $this->Paginator->sort('observaciones'); ?></th>
 			<th><?php echo $this->Paginator->sort('vencimiento'); ?></th>
-			<th><?php echo $this->Paginator->sort('pagada'); ?></th>
-			<th><?php echo $this->Paginator->sort('emitido'); ?></th>
-			<th><?php echo $this->Paginator->sort('created'); ?></th>
-			<th><?php echo $this->Paginator->sort('modified'); ?></th>
+			<th class="text-center"><?php echo $this->Paginator->sort('pagada'); ?></th>
+			<th class="text-center"><?php echo $this->Paginator->sort('emitido', 'Emitida'); ?></th>
+			<!-- <th><?php //echo $this->Paginator->sort('created'); ?></th> -->
+			<!-- <th><?php //echo $this->Paginator->sort('modified'); ?></th> -->
 			<th><?php echo $this->Paginator->sort('recibo_id'); ?></th>
-			<th><?php echo $this->Paginator->sort('socio_id'); ?></th>
+			<th><?php echo $this->Paginator->sort('Socio.name', 'Socio'); ?></th>
 			<th class="actions"><?php echo __('Actions'); ?></th>
 	</tr>
 	</thead>
@@ -20,18 +20,38 @@
 	<?php foreach ($cuotas as $cuota): ?>
 	<tr>
 		<td><?php echo h($cuota['Cuota']['id']); ?>&nbsp;</td>
-		<td><?php echo h($cuota['Cuota']['importe']); ?>&nbsp;</td>
+		<td>
+			<?php echo $this->Number->format($cuota['Cuota']['importe'], array(
+			    'places' => 2,
+			    'before' => '$ ',
+			    'escape' => false,
+			    'decimals' => ',',
+			    'thousands' => '.'
+			)); ?>&nbsp;
+		</td>
 		<td><?php echo h($cuota['Cuota']['observaciones']); ?>&nbsp;</td>
-		<td><?php echo h($cuota['Cuota']['vencimiento']); ?>&nbsp;</td>
-		<td><?php echo h($cuota['Cuota']['pagada']); ?>&nbsp;</td>
-		<td><?php echo h($cuota['Cuota']['emitido']); ?>&nbsp;</td>
-		<td><?php echo h($cuota['Cuota']['created']); ?>&nbsp;</td>
-		<td><?php echo h($cuota['Cuota']['modified']); ?>&nbsp;</td>
+		<td><?php echo $this->Time->format($cuota['Cuota']['vencimiento'], '%d-%m-%Y'); ?>&nbsp;</td>
+		<td class="text-center">
+			<?php if($cuota['Cuota']['pagada']): ?>
+				<i class="fa fa-check"></i>
+			<?php else: ?>
+				&nbsp;
+			<?php endif; ?>
+		</td>
+		<td class="text-center">
+			<?php if($cuota['Cuota']['emitido']): ?>
+				<i class="fa fa-check"></i>
+			<?php else: ?>
+				&nbsp;
+			<?php endif; ?>
+		</td>
+		<!-- <td><?php //echo h($cuota['Cuota']['created']); ?>&nbsp;</td> -->
+		<!-- <td><?php //echo h($cuota['Cuota']['modified']); ?>&nbsp;</td> -->
 		<td>
 			<?php echo $this->Html->link($cuota['Recibo']['id'], array('controller' => 'recibos', 'action' => 'view', $cuota['Recibo']['id'])); ?>
 		</td>
 		<td>
-			<?php echo $this->Html->link($cuota['Socio']['id'], array('controller' => 'socios', 'action' => 'view', $cuota['Socio']['id'])); ?>
+			<?php echo $this->Html->link($cuota['Socio']['name'], array('controller' => 'socios', 'action' => 'view', $cuota['Socio']['id'])); ?>
 		</td>
 		<td class="actions">
 			<?php echo $this->Html->link(__('View'), array('action' => 'view', $cuota['Cuota']['id'])); ?>

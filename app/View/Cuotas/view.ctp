@@ -1,14 +1,15 @@
 <div class="cuotas view">
 <h2><?php echo __('Cuota'); ?></h2>
 	<dl>
-		<dt><?php echo __('Id'); ?></dt>
-		<dd>
-			<?php echo h($cuota['Cuota']['id']); ?>
-			&nbsp;
-		</dd>
 		<dt><?php echo __('Importe'); ?></dt>
 		<dd>
-			<?php echo h($cuota['Cuota']['importe']); ?>
+			<?php echo $this->Number->format($cuota['Cuota']['importe'], array(
+			    'places' => 2,
+			    'before' => '$ ',
+			    'escape' => false,
+			    'decimals' => ',',
+			    'thousands' => '.'
+			)); ?>
 			&nbsp;
 		</dd>
 		<dt><?php echo __('Observaciones'); ?></dt>
@@ -18,20 +19,30 @@
 		</dd>
 		<dt><?php echo __('Vencimiento'); ?></dt>
 		<dd>
-			<?php echo h($cuota['Cuota']['vencimiento']); ?>
+			<?php echo $this->Time->format($cuota['Cuota']['vencimiento'], '%d-%m-%Y'); ?>
 			&nbsp;
 		</dd>
+		<td class="text-center">
+			
+		</td>
 		<dt><?php echo __('Pagada'); ?></dt>
 		<dd>
-			<?php echo h($cuota['Cuota']['pagada']); ?>
-			&nbsp;
+			<?php if($cuota['Cuota']['pagada']): ?>
+				<i class="fa fa-check"></i>
+			<?php else: ?>
+				&nbsp;
+			<?php endif; ?>
 		</dd>
 		<dt><?php echo __('Emitido'); ?></dt>
 		<dd>
-			<?php echo h($cuota['Cuota']['emitido']); ?>
+			<?php if($cuota['Cuota']['emitido']): ?>
+				<i class="fa fa-check"></i>
+			<?php else: ?>
+				&nbsp;
+			<?php endif; ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Created'); ?></dt>
+		<!-- <dt><?php echo __('Created'); ?></dt>
 		<dd>
 			<?php echo h($cuota['Cuota']['created']); ?>
 			&nbsp;
@@ -40,7 +51,7 @@
 		<dd>
 			<?php echo h($cuota['Cuota']['modified']); ?>
 			&nbsp;
-		</dd>
+		</dd> -->
 		<dt><?php echo __('Recibo'); ?></dt>
 		<dd>
 			<?php echo $this->Html->link($cuota['Recibo']['id'], array('controller' => 'recibos', 'action' => 'view', $cuota['Recibo']['id'])); ?>
@@ -48,12 +59,12 @@
 		</dd>
 		<dt><?php echo __('Socio'); ?></dt>
 		<dd>
-			<?php echo $this->Html->link($cuota['Socio']['id'], array('controller' => 'socios', 'action' => 'view', $cuota['Socio']['id'])); ?>
+			<?php echo $this->Html->link($cuota['Socio']['name'], array('controller' => 'socios', 'action' => 'view', $cuota['Socio']['id'])); ?>
 			&nbsp;
 		</dd>
 	</dl>
 </div>
-<div class="actions">
+<!-- <div class="actions">
 	<h3><?php echo __('Actions'); ?></h3>
 	<ul>
 		<li><?php echo $this->Html->link(__('Edit Cuota'), array('action' => 'edit', $cuota['Cuota']['id'])); ?> </li>
@@ -65,4 +76,4 @@
 		<li><?php echo $this->Html->link(__('List Socios'), array('controller' => 'socios', 'action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Socio'), array('controller' => 'socios', 'action' => 'add')); ?> </li>
 	</ul>
-</div>
+</div> -->

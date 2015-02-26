@@ -8,6 +8,49 @@ App::uses('AppController', 'Controller');
  */
 class CuotasController extends AppController {
 
+	/**************************************************************************************************************
+	* Authentication
+	**************************************************************************************************************/
+	public function beforeFilter() {
+		parent::beforeFilter();
+		$this->Auth->allow('logout');
+	}
+
+	public function isAuthorized($user = null) {
+		$owner_allowed = array();
+		$user_allowed = array();
+		$admin_allowed = array_merge($owner_allowed, $user_allowed, array('add', 'edit', 'index', 'delete', 'view'));
+		$developer_allowed = array_merge($admin_allowed, array());
+
+		# All registered users can:
+		if (in_array($this->action, $user_allowed))
+			return true;
+
+		# Admin users can:
+		// if ($user['rol'] === 'admin')
+		if ($user['Rol']['weight'] >= User::ADMIN) 
+			if (in_array($this->action, $admin_allowed))
+				return true;
+
+		# Developer users can:
+		if ($user['Rol']['weight'] >= User::DEVELOPER)
+			if (in_array($this->action, $developer_allowed))
+				return true;
+
+		# The owner of an user can:
+		if (in_array($this->action, $owner_allowed)) {
+			$userId = $this->request->params['pass'][0];
+			if ($this->Event->isOwnedBy($userId, $user['id']))
+				return true;
+		}
+
+		return parent::isAuthorized($user);
+	}
+	/**************************************************************************************************************
+	* /authentication
+	**************************************************************************************************************/
+
+
 /**
  * Components
  *
@@ -55,6 +98,8 @@ class CuotasController extends AppController {
 				$this->Session->setFlash(__('The cuota could not be saved. Please, try again.'));
 			}
 		}
+		$socios = $this->Cuota->Socio->find('list');
+		$this->set(compact('socios'));
 	}
 
 /**
@@ -79,6 +124,8 @@ class CuotasController extends AppController {
 			$options = array('conditions' => array('Cuota.' . $this->Cuota->primaryKey => $id));
 			$this->request->data = $this->Cuota->find('first', $options);
 		}
+		$socios = $this->Cuota->Socio->find('list');
+		$this->set(compact('socios'));
 	}
 
 /**
