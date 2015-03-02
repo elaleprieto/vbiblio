@@ -4,8 +4,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: San Cayetano\n"
-"POT-Creation-Date: 2014-09-16 19:22-0300\n"
-"PO-Revision-Date: 2014-09-16 19:33-0300\n"
+"POT-Creation-Date: 2015-03-02 16:02-0300\n"
+"PO-Revision-Date: 2015-03-02 16:17-0300\n"
 "Last-Translator: Ale Prieto <aleprieto@gmail.com>\n"
 "Language-Team: Colectivo Libre <contacto@colectivolibre.com.ar>\n"
 "Language: \n"
@@ -18,422 +18,1997 @@ msgstr ""
 "X-Poedit-Country: ARGENTINA\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
-#: Controller/CategoriesController.php:37;69;94
-msgid "Invalid category"
+#: Controller/CategoriasController.php:37;69;94
+#, fuzzy
+msgid "Invalid categoria"
 msgstr "Categoría inválida"
 
-#: Controller/CategoriesController.php:52;73
-msgid "The category has been saved."
+#: Controller/CategoriasController.php:52;73
+#, fuzzy
+msgid "The categoria has been saved."
 msgstr "La categoría ha sido guardada."
 
-#: Controller/CategoriesController.php:55;76
-msgid "The category could not be saved. Please, try again."
+#: Controller/CategoriasController.php:55;76
+#, fuzzy
+msgid "The categoria could not be saved. Please, try again."
 msgstr "La categoría no ha sido guardado.. Por favor, intente nuevamente."
 
-#: Controller/CategoriesController.php:98
-msgid "The category has been deleted."
+#: Controller/CategoriasController.php:98
+#, fuzzy
+msgid "The categoria has been deleted."
 msgstr "La categoría ha sido eliminado."
 
-#: Controller/CategoriesController.php:100
-msgid "The category could not be deleted. Please, try again."
+#: Controller/CategoriasController.php:100
+#, fuzzy
+msgid "The categoria could not be deleted. Please, try again."
 msgstr "La categoría no ha sido eliminado. Por favor, intente nuevamente."
 
-#: Controller/MembersController.php:37;71;98
-msgid "Invalid member"
+#: Controller/CobradoresController.php:37;69;94
+#, fuzzy
+msgid "Invalid cobrador"
+msgstr "Categoría inválida"
+
+#: Controller/CobradoresController.php:52;73
+#, fuzzy
+msgid "The cobrador has been saved."
+msgstr "El rol ha sido guardado."
+
+#: Controller/CobradoresController.php:55;76
+#, fuzzy
+msgid "The cobrador could not be saved. Please, try again."
+msgstr "El rol no ha sido guardado. Por favor, intente nuevamente."
+
+#: Controller/CobradoresController.php:98
+#, fuzzy
+msgid "The cobrador has been deleted."
+msgstr "El rol ha sido eliminado."
+
+#: Controller/CobradoresController.php:100
+#, fuzzy
+msgid "The cobrador could not be deleted. Please, try again."
+msgstr "El rol no ha sido eliminado. Por favor, intente nuevamente."
+
+#: Controller/CuotasController.php:80;114;141
+msgid "Invalid cuota"
+msgstr "Cuota inválida"
+
+#: Controller/CuotasController.php:95;118
+msgid "The cuota has been saved."
+msgstr "La cuota ha sido guardada."
+
+#: Controller/CuotasController.php:98;121
+msgid "The cuota could not be saved. Please, try again."
+msgstr "La cuota no ha sido guardada. Por favor, intente nuevamente."
+
+#: Controller/CuotasController.php:145
+msgid "The cuota has been deleted."
+msgstr "La cuota ha sido eliminada."
+
+#: Controller/CuotasController.php:147
+msgid "The cuota could not be deleted. Please, try again."
+msgstr "La cuota no ha sido eliminada. Por favor, intente nuevamente."
+
+#: Controller/CuotasanualsController.php:37;71;98
+msgid "Invalid cuotasanual"
+msgstr "Cuota inválida"
+
+#: Controller/CuotasanualsController.php:52;75
+#, fuzzy
+msgid "The cuotasanual has been saved."
+msgstr "La empresa ha sido guardada."
+
+#: Controller/CuotasanualsController.php:55;78
+#, fuzzy
+msgid "The cuotasanual could not be saved. Please, try again."
+msgstr "La empresa no ha sido guardada. Por favor, intente nuevamente."
+
+#: Controller/CuotasanualsController.php:102
+#, fuzzy
+msgid "The cuotasanual has been deleted."
+msgstr "La empresa ha sido eliminada."
+
+#: Controller/CuotasanualsController.php:104
+#, fuzzy
+msgid "The cuotasanual could not be deleted. Please, try again."
+msgstr "La empresa no ha sido eliminada. Por favor, intente nuevamente."
+
+#: Controller/LocalidadesController.php:37;71;98
+#, fuzzy
+msgid "Invalid localidad"
+msgstr "IVA inválida"
+
+#: Controller/LocalidadesController.php:52;75
+#, fuzzy
+msgid "The localidad has been saved."
+msgstr "El IVA ha sido guardado."
+
+#: Controller/LocalidadesController.php:55;78
+#, fuzzy
+msgid "The localidad could not be saved. Please, try again."
+msgstr "El IVA no ha sido guardado. Por favor, intente nuevamente."
+
+#: Controller/LocalidadesController.php:102
+#, fuzzy
+msgid "The localidad has been deleted."
+msgstr "El IVA ha sido eliminado."
+
+#: Controller/LocalidadesController.php:104
+#, fuzzy
+msgid "The localidad could not be deleted. Please, try again."
+msgstr "El IVA no ha sido eliminado. Por favor, intente nuevamente."
+
+#: Controller/ProvinciasController.php:37;69;94
+#, fuzzy
+msgid "Invalid provincia"
+msgstr "Persona inválida"
+
+#: Controller/ProvinciasController.php:52;73
+#, fuzzy
+msgid "The provincia has been saved."
+msgstr "La persona ha sido guardada."
+
+#: Controller/ProvinciasController.php:55;76
+#, fuzzy
+msgid "The provincia could not be saved. Please, try again."
+msgstr "La persona no ha sido guardada. Por favor, intente nuevamente."
+
+#: Controller/ProvinciasController.php:98
+#, fuzzy
+msgid "The provincia has been deleted."
+msgstr "La persona ha sido eliminada."
+
+#: Controller/ProvinciasController.php:100
+#, fuzzy
+msgid "The provincia could not be deleted. Please, try again."
+msgstr "La persona no ha sido eliminada. Por favor, intente nuevamente."
+
+#: Controller/RecibosController.php:79;113;140
+msgid "Invalid recibo"
+msgstr "Recibo inválido"
+
+#: Controller/RecibosController.php:94;117
+msgid "The recibo has been saved."
+msgstr "El recibo ha sido guardado."
+
+#: Controller/RecibosController.php:97;120
+msgid "The recibo could not be saved. Please, try again."
+msgstr "El recibo no ha sido guardado. Por favor, intente nuevamente."
+
+#: Controller/RecibosController.php:144
+msgid "The recibo has been deleted."
+msgstr "El recibo ha sido eliminado."
+
+#: Controller/RecibosController.php:146
+msgid "The recibo could not be deleted. Please, try again."
+msgstr "El recibo no ha sido eliminado. Por favor, intente nuevamente."
+
+#: Controller/RolsController.php:37;69;94
+msgid "Invalid rol"
+msgstr "Rol inválido"
+
+#: Controller/RolsController.php:52;73
+msgid "The rol has been saved."
+msgstr "El rol ha sido guardado."
+
+#: Controller/RolsController.php:55;76
+msgid "The rol could not be saved. Please, try again."
+msgstr "El rol no ha sido guardado. Por favor, intente nuevamente."
+
+#: Controller/RolsController.php:98
+msgid "The rol has been deleted."
+msgstr "El rol ha sido eliminado."
+
+#: Controller/RolsController.php:100
+msgid "The rol could not be deleted. Please, try again."
+msgstr "El rol no ha sido eliminado. Por favor, intente nuevamente."
+
+#: Controller/SociosController.php:81;120;152
+msgid "Invalid socio"
 msgstr "Socio inválido"
 
-#: Controller/MembersController.php:52;75
-msgid "The member has been saved."
+#: Controller/SociosController.php:96;124
+msgid "The socio has been saved."
 msgstr "El socio ha sido guardado."
 
-#: Controller/MembersController.php:55;78
-msgid "The member could not be saved. Please, try again."
-msgstr "El socio no ha sido guardado.. Por favor, intente nuevamente."
+#: Controller/SociosController.php:99;127
+msgid "The socio could not be saved. Please, try again."
+msgstr "El socio no ha sido guardado. Por favor, intente nuevamente."
 
-#: Controller/MembersController.php:102
-msgid "The member has been deleted."
+#: Controller/SociosController.php:156
+msgid "The socio has been deleted."
 msgstr "El socio ha sido eliminado."
 
-#: Controller/MembersController.php:104
-msgid "The member could not be deleted. Please, try again."
+#: Controller/SociosController.php:158
+msgid "The socio could not be deleted. Please, try again."
 msgstr "El socio no ha sido eliminado. Por favor, intente nuevamente."
 
-#: Controller/SubscriptionsController.php:37;71;98
-msgid "Invalid subscription"
-msgstr "La cuota es inválida"
+#: Controller/TipocambiosController.php:37;69;94
+#, fuzzy
+msgid "Invalid tipocambio"
+msgstr "IVA inválida"
 
-#: Controller/SubscriptionsController.php:52;75
-msgid "The subscription has been saved."
-msgstr "La cuota ha sido guardado."
+#: Controller/TipocambiosController.php:52;73
+#, fuzzy
+msgid "The tipocambio has been saved."
+msgstr "El IVA ha sido guardado."
 
-#: Controller/SubscriptionsController.php:55;78
-msgid "The subscription could not be saved. Please, try again."
-msgstr "La cuota no ha sido guardado.. Por favor, intente nuevamente."
+#: Controller/TipocambiosController.php:55;76
+#, fuzzy
+msgid "The tipocambio could not be saved. Please, try again."
+msgstr "El IVA no ha sido guardado. Por favor, intente nuevamente."
 
-#: Controller/SubscriptionsController.php:102
-msgid "The subscription has been deleted."
-msgstr "La cuota ha sido eliminado."
+#: Controller/TipocambiosController.php:98
+#, fuzzy
+msgid "The tipocambio has been deleted."
+msgstr "El IVA ha sido eliminado."
 
-#: Controller/SubscriptionsController.php:104
-msgid "The subscription could not be deleted. Please, try again."
-msgstr "La cuota no ha sido eliminado. Por favor, intente nuevamente."
+#: Controller/TipocambiosController.php:100
+#, fuzzy
+msgid "The tipocambio could not be deleted. Please, try again."
+msgstr "El IVA no ha sido eliminado. Por favor, intente nuevamente."
+
+#: Controller/TipodocsController.php:37;69;94
+#, fuzzy
+msgid "Invalid tipodoc"
+msgstr "Tipo inválido"
+
+#: Controller/TipodocsController.php:52;73
+#, fuzzy
+msgid "The tipodoc has been saved."
+msgstr "El tipo ha sido guardado."
+
+#: Controller/TipodocsController.php:55;76
+#, fuzzy
+msgid "The tipodoc could not be saved. Please, try again."
+msgstr "El tipo no ha sido guardado. Por favor, intente nuevamente."
+
+#: Controller/TipodocsController.php:98
+#, fuzzy
+msgid "The tipodoc has been deleted."
+msgstr "El tipo ha sido eliminado."
+
+#: Controller/TipodocsController.php:100
+#, fuzzy
+msgid "The tipodoc could not be deleted. Please, try again."
+msgstr "El tipo no ha sido eliminado. Por favor, intente nuevamente"
+
+#: Controller/TiposController.php:37;69;94
+#, fuzzy
+msgid "Invalid tipo"
+msgstr "Tipo inválido"
+
+#: Controller/TiposController.php:52;73
+#, fuzzy
+msgid "The tipo has been saved."
+msgstr "El tipo ha sido guardado."
+
+#: Controller/TiposController.php:55;76
+#, fuzzy
+msgid "The tipo could not be saved. Please, try again."
+msgstr "El tipo no ha sido guardado. Por favor, intente nuevamente."
+
+#: Controller/TiposController.php:98
+#, fuzzy
+msgid "The tipo has been deleted."
+msgstr "El tipo ha sido eliminado."
+
+#: Controller/TiposController.php:100
+#, fuzzy
+msgid "The tipo could not be deleted. Please, try again."
+msgstr "El tipo no ha sido eliminado. Por favor, intente nuevamente"
+
+#: Controller/UsersController.php:83
+msgid "Invalid username or password, try again"
+msgstr "Usuario o contraseña inválido."
+
+#: Controller/UsersController.php:102;136;163
+msgid "Invalid user"
+msgstr "Usuario inválido"
+
+#: Controller/UsersController.php:117;140
+msgid "The user has been saved."
+msgstr "El usuario ha sido guardado."
+
+#: Controller/UsersController.php:120;143
+msgid "The user could not be saved. Please, try again."
+msgstr "El usuario no ha sido guardado.. Por favor, intente nuevamente."
+
+#: Controller/UsersController.php:167
+msgid "The user has been deleted."
+msgstr "El usuario ha sido eliminado."
+
+#: Controller/UsersController.php:169
+msgid "The user could not be deleted. Please, try again."
+msgstr "El usuario no ha sido eliminado. Por favor, intente nuevamente."
+
+#: View/Categorias/add.ctp:4
+#, fuzzy
+msgid "Add Categoria"
+msgstr "Crear Categoría"
+
+#: View/Categorias/add.ctp:10
+#: View/Categorias/edit.ctp:11
+#: View/Categories/add.ctp:10
+#: View/Categories/edit.ctp:11
+#: View/Cobradores/add.ctp:13
+#: View/Cobradores/edit.ctp:14
+#: View/Cuotas/add.ctp:64
+#: View/Cuotas/admin_add.ctp:15
+#: View/Cuotas/admin_edit.ctp:16
+#: View/Cuotas/edit.ctp:65
+#: View/Cuotasanuals/add.ctp:11
+#: View/Cuotasanuals/edit.ctp:12
+#: View/Localidades/add.ctp:11
+#: View/Localidades/edit.ctp:12
+#: View/Provincias/add.ctp:9
+#: View/Provincias/admin_add.ctp:9
+#: View/Provincias/admin_edit.ctp:10
+#: View/Provincias/edit.ctp:10
+#: View/Recibos/add.ctp:48
+#: View/Recibos/edit.ctp:49
+#: View/Rols/add.ctp:11
+#: View/Rols/edit.ctp:12
+#: View/Socios/add.ctp:336
+#: View/Socios/edit.ctp:296
+#: View/Tipocambios/add.ctp:10
+#: View/Tipocambios/edit.ctp:11
+#: View/Tipodocs/add.ctp:10
+#: View/Tipodocs/edit.ctp:11
+#: View/Tipos/add.ctp:10
+#: View/Tipos/edit.ctp:11
+#: View/Users/add.ctp:12
+#: View/Users/edit.ctp:13
+msgid "Submit"
+msgstr "Enviar"
+
+#: View/Categorias/add.ctp:13
+#: View/Categorias/edit.ctp:14
+#: View/Categorias/index.ctp:9;42
+#: View/Categorias/view.ctp:22;79
+#: View/Categories/add.ctp:13
+#: View/Categories/edit.ctp:14
+#: View/Categories/index.ctp:9;42
+#: View/Categories/view.ctp:22
+#: View/Cobradores/add.ctp:16
+#: View/Cobradores/edit.ctp:17
+#: View/Cobradores/index.ctp:12;48
+#: View/Cobradores/view.ctp:37;94
+#: View/Cuotas/add.ctp:67
+#: View/Cuotas/admin_add.ctp:18
+#: View/Cuotas/admin_edit.ctp:19
+#: View/Cuotas/admin_index.ctp:16;60
+#: View/Cuotas/admin_view.ctp:57
+#: View/Cuotas/edit.ctp:68
+#: View/Cuotas/index.ctp:16;80
+#: View/Cuotas/view.ctp:68
+#: View/Cuotasanuals/add.ctp:14
+#: View/Cuotasanuals/edit.ctp:15
+#: View/Cuotasanuals/index.ctp:12;50
+#: View/Cuotasanuals/view.ctp:37
+#: View/Localidades/add.ctp:14
+#: View/Localidades/edit.ctp:15
+#: View/Localidades/index.ctp:10;46
+#: View/Localidades/view.ctp:27;86
+#: View/Provincias/add.ctp:12
+#: View/Provincias/admin_add.ctp:12
+#: View/Provincias/admin_edit.ctp:13
+#: View/Provincias/admin_index.ctp:8;40
+#: View/Provincias/admin_view.ctp:17;36
+#: View/Provincias/edit.ctp:13
+#: View/Provincias/index.ctp:8;40
+#: View/Provincias/view.ctp:17;36
+#: View/Recibos/index.ctp:14
+#: View/Recibos/view.ctp:74
+#: View/Rols/add.ctp:14
+#: View/Rols/edit.ctp:15
+#: View/Rols/index.ctp:12;48
+#: View/Rols/view.ctp:37;59
+#: View/Socios/index.ctp:48
+#: View/Tipocambios/add.ctp:13
+#: View/Tipocambios/edit.ctp:14
+#: View/Tipocambios/index.ctp:9;42
+#: View/Tipocambios/view.ctp:22;79
+#: View/Tipodocs/add.ctp:13
+#: View/Tipodocs/edit.ctp:14
+#: View/Tipodocs/index.ctp:9;42
+#: View/Tipodocs/view.ctp:22;79
+#: View/Tipos/add.ctp:13
+#: View/Tipos/edit.ctp:14
+#: View/Tipos/index.ctp:9;42
+#: View/Tipos/view.ctp:22;79
+#: View/Users/add.ctp:15
+#: View/Users/edit.ctp:16
+#: View/Users/index.ctp:13;52
+#: View/Users/view.ctp:42
+msgid "Actions"
+msgstr "Acciones"
+
+#: View/Categorias/add.ctp:16
+#: View/Categorias/edit.ctp:18
+#: View/Categorias/view.ctp:26
+#: View/Cuotasanuals/add.ctp:18
+#: View/Cuotasanuals/edit.ctp:20
+#: View/Cuotasanuals/index.ctp:53
+#: View/Cuotasanuals/view.ctp:43
+#, fuzzy
+msgid "List Categorias"
+msgstr "Listar Categorías"
+
+#: View/Categorias/add.ctp:17
+#: View/Categorias/edit.ctp:19
+#: View/Categorias/index.ctp:45
+#: View/Categorias/view.ctp:28
+#: View/Cobradores/add.ctp:20
+#: View/Cobradores/edit.ctp:22
+#: View/Cobradores/index.ctp:51
+#: View/Cobradores/view.ctp:43
+#: View/Cuotas/add.ctp:73
+#: View/Cuotas/admin_add.ctp:24
+#: View/Cuotas/admin_edit.ctp:26
+#: View/Cuotas/admin_index.ctp:65
+#: View/Cuotas/admin_view.ctp:65
+#: View/Cuotas/edit.ctp:75
+#: View/Cuotas/index.ctp:85
+#: View/Cuotas/view.ctp:76
+#: View/Localidades/add.ctp:20
+#: View/Localidades/edit.ctp:22
+#: View/Localidades/index.ctp:51
+#: View/Localidades/view.ctp:35
+#: View/Tipocambios/add.ctp:17
+#: View/Tipocambios/edit.ctp:19
+#: View/Tipocambios/index.ctp:45
+#: View/Tipocambios/view.ctp:28
+#: View/Tipodocs/add.ctp:17
+#: View/Tipodocs/edit.ctp:19
+#: View/Tipodocs/index.ctp:45
+#: View/Tipodocs/view.ctp:28
+#: View/Tipos/add.ctp:17
+#: View/Tipos/edit.ctp:19
+#: View/Tipos/index.ctp:45
+#: View/Tipos/view.ctp:28
+msgid "List Socios"
+msgstr "Listar Socios"
+
+#: View/Categorias/add.ctp:18
+#: View/Categorias/edit.ctp:20
+#: View/Categorias/index.ctp:46
+#: View/Categorias/view.ctp:29;137
+#: View/Cobradores/add.ctp:21
+#: View/Cobradores/edit.ctp:23
+#: View/Cobradores/index.ctp:52
+#: View/Cobradores/view.ctp:44;152
+#: View/Cuotas/add.ctp:74
+#: View/Cuotas/admin_add.ctp:25
+#: View/Cuotas/admin_edit.ctp:27
+#: View/Cuotas/admin_index.ctp:66
+#: View/Cuotas/admin_view.ctp:66
+#: View/Cuotas/edit.ctp:76
+#: View/Cuotas/index.ctp:86
+#: View/Cuotas/view.ctp:77
+#: View/Localidades/add.ctp:21
+#: View/Localidades/edit.ctp:23
+#: View/Localidades/index.ctp:52
+#: View/Localidades/view.ctp:36;144
+#: View/Tipocambios/add.ctp:18
+#: View/Tipocambios/edit.ctp:20
+#: View/Tipocambios/index.ctp:46
+#: View/Tipocambios/view.ctp:29;137
+#: View/Tipodocs/add.ctp:18
+#: View/Tipodocs/edit.ctp:20
+#: View/Tipodocs/index.ctp:46
+#: View/Tipodocs/view.ctp:29;137
+#: View/Tipos/add.ctp:18
+#: View/Tipos/edit.ctp:20
+#: View/Tipos/index.ctp:46
+#: View/Tipos/view.ctp:29;137
+msgid "New Socio"
+msgstr "Nuevo Socio"
+
+#: View/Categorias/edit.ctp:4
+#: View/Categorias/view.ctp:24
+#, fuzzy
+msgid "Edit Categoria"
+msgstr "Editar Categoría"
+
+#: View/Categorias/edit.ctp:17
+#: View/Categorias/index.ctp:21
+#: View/Categorias/view.ctp:128
+#: View/Categories/edit.ctp:17
+#: View/Categories/index.ctp:21
+#: View/Cobradores/edit.ctp:20
+#: View/Cobradores/index.ctp:27
+#: View/Cobradores/view.ctp:143
+#: View/Cuotas/admin_edit.ctp:22
+#: View/Cuotas/admin_index.ctp:39
+#: View/Cuotas/edit.ctp:71
+#: View/Cuotas/index.ctp:59
+#: View/Cuotasanuals/edit.ctp:18
+#: View/Cuotasanuals/index.ctp:29
+#: View/Localidades/edit.ctp:18
+#: View/Localidades/index.ctp:25
+#: View/Localidades/view.ctp:135
+#: View/Provincias/admin_edit.ctp:16
+#: View/Provincias/admin_index.ctp:19
+#: View/Provincias/admin_view.ctp:47
+#: View/Provincias/edit.ctp:16
+#: View/Provincias/index.ctp:19
+#: View/Provincias/view.ctp:47
+#: View/Recibos/index.ctp:56
+#: View/Recibos/view.ctp:91
+#: View/Rols/edit.ctp:18
+#: View/Rols/index.ctp:27
+#: View/Rols/view.ctp:73
+#: View/Socios/index.ctp:111
+#: View/Tipocambios/edit.ctp:17
+#: View/Tipocambios/index.ctp:21
+#: View/Tipocambios/view.ctp:128
+#: View/Tipodocs/edit.ctp:17
+#: View/Tipodocs/index.ctp:21
+#: View/Tipodocs/view.ctp:128
+#: View/Tipos/edit.ctp:17
+#: View/Tipos/index.ctp:21
+#: View/Tipos/view.ctp:128
+#: View/Users/edit.ctp:19
+#: View/Users/index.ctp:31
+msgid "Delete"
+msgstr "Eliminar"
+
+#: View/Categorias/edit.ctp:17
+#: View/Categorias/index.ctp:21
+#: View/Categorias/view.ctp:25;128
+#: View/Categories/edit.ctp:17
+#: View/Categories/index.ctp:21
+#: View/Categories/view.ctp:25
+#: View/Cobradores/edit.ctp:20
+#: View/Cobradores/index.ctp:27
+#: View/Cobradores/view.ctp:40;143
+#: View/Cuotas/admin_edit.ctp:22
+#: View/Cuotas/admin_index.ctp:39
+#: View/Cuotas/admin_view.ctp:60
+#: View/Cuotas/edit.ctp:71
+#: View/Cuotas/index.ctp:59
+#: View/Cuotas/view.ctp:71
+#: View/Cuotasanuals/edit.ctp:18
+#: View/Cuotasanuals/index.ctp:29
+#: View/Cuotasanuals/view.ctp:40
+#: View/Localidades/edit.ctp:18
+#: View/Localidades/index.ctp:25
+#: View/Localidades/view.ctp:30;135
+#: View/Provincias/admin_edit.ctp:16
+#: View/Provincias/admin_index.ctp:19
+#: View/Provincias/admin_view.ctp:20;47
+#: View/Provincias/edit.ctp:16
+#: View/Provincias/index.ctp:19
+#: View/Provincias/view.ctp:20;47
+#: View/Recibos/index.ctp:56
+#: View/Recibos/view.ctp:91
+#: View/Rols/edit.ctp:18
+#: View/Rols/index.ctp:27
+#: View/Rols/view.ctp:40;73
+#: View/Socios/index.ctp:111
+#: View/Tipocambios/edit.ctp:17
+#: View/Tipocambios/index.ctp:21
+#: View/Tipocambios/view.ctp:25;128
+#: View/Tipodocs/edit.ctp:17
+#: View/Tipodocs/index.ctp:21
+#: View/Tipodocs/view.ctp:25;128
+#: View/Tipos/edit.ctp:17
+#: View/Tipos/index.ctp:21
+#: View/Tipos/view.ctp:25;128
+#: View/Users/edit.ctp:19
+#: View/Users/index.ctp:31
+#: View/Users/view.ctp:45
+msgid "Are you sure you want to delete # %s?"
+msgstr "¿Está seguro que quiere eliminarlo?"
+
+#: View/Categorias/index.ctp:2
+#: View/Cuotasanuals/view.ctp:29
+#, fuzzy
+msgid "Categorias"
+msgstr "Categorías"
+
+#: View/Categorias/index.ctp:19
+#: View/Categorias/view.ctp:126
+#: View/Categories/index.ctp:19
+#: View/Cobradores/index.ctp:25
+#: View/Cobradores/view.ctp:141
+#: View/Cuotas/admin_index.ctp:37
+#: View/Cuotas/index.ctp:57
+#: View/Cuotasanuals/index.ctp:27
+#: View/Localidades/index.ctp:23
+#: View/Localidades/view.ctp:133
+#: View/Provincias/admin_index.ctp:17
+#: View/Provincias/admin_view.ctp:45
+#: View/Provincias/index.ctp:17
+#: View/Provincias/view.ctp:45
+#: View/Recibos/index.ctp:54
+#: View/Recibos/view.ctp:89
+#: View/Rols/index.ctp:25
+#: View/Rols/view.ctp:71
+#: View/Socios/index.ctp:109
+#: View/Tipocambios/index.ctp:19
+#: View/Tipocambios/view.ctp:126
+#: View/Tipodocs/index.ctp:19
+#: View/Tipodocs/view.ctp:126
+#: View/Tipos/index.ctp:19
+#: View/Tipos/view.ctp:126
+#: View/Users/index.ctp:29
+msgid "View"
+msgstr "Ver"
+
+#: View/Categorias/index.ctp:20
+#: View/Categorias/view.ctp:127
+#: View/Categories/index.ctp:20
+#: View/Cobradores/index.ctp:26
+#: View/Cobradores/view.ctp:142
+#: View/Cuotas/admin_index.ctp:38
+#: View/Cuotas/index.ctp:58
+#: View/Cuotasanuals/index.ctp:28
+#: View/Localidades/index.ctp:24
+#: View/Localidades/view.ctp:134
+#: View/Provincias/admin_index.ctp:18
+#: View/Provincias/admin_view.ctp:46
+#: View/Provincias/index.ctp:18
+#: View/Provincias/view.ctp:46
+#: View/Recibos/index.ctp:55
+#: View/Recibos/view.ctp:90
+#: View/Rols/index.ctp:26
+#: View/Rols/view.ctp:72
+#: View/Socios/index.ctp:110
+#: View/Tipocambios/index.ctp:20
+#: View/Tipocambios/view.ctp:127
+#: View/Tipodocs/index.ctp:20
+#: View/Tipodocs/view.ctp:127
+#: View/Tipos/index.ctp:20
+#: View/Tipos/view.ctp:127
+#: View/Users/index.ctp:30
+msgid "Edit"
+msgstr "Editar"
+
+#: View/Categorias/index.ctp:30
+#: View/Categories/index.ctp:30
+#: View/Cobradores/index.ctp:36
+#: View/Cuotas/admin_index.ctp:48
+#: View/Cuotas/index.ctp:68
+#: View/Cuotasanuals/index.ctp:38
+#: View/Localidades/index.ctp:34
+#: View/Provincias/admin_index.ctp:28
+#: View/Provincias/index.ctp:28
+#: View/Recibos/index.ctp:65
+#: View/Rols/index.ctp:36
+#: View/Socios/index.ctp:120
+#: View/Tipocambios/index.ctp:30
+#: View/Tipodocs/index.ctp:30
+#: View/Tipos/index.ctp:30
+#: View/Users/index.ctp:40
+msgid "Page {:page} of {:pages}, showing {:current} records out of {:count} total, starting on record {:start}, ending on {:end}"
+msgstr "Página {:page} de {:pages}, mostrando {:current} registros de un total de {:count}, empezando en {:start} y terminando en {:end}"
+
+#: View/Categorias/index.ctp:35
+#: View/Categories/index.ctp:35
+#: View/Cobradores/index.ctp:41
+#: View/Cuotas/admin_index.ctp:53
+#: View/Cuotas/index.ctp:73
+#: View/Cuotasanuals/index.ctp:43
+#: View/Localidades/index.ctp:39
+#: View/Provincias/admin_index.ctp:33
+#: View/Provincias/index.ctp:33
+#: View/Recibos/index.ctp:71
+#: View/Rols/index.ctp:41
+#: View/Socios/index.ctp:126
+#: View/Tipocambios/index.ctp:35
+#: View/Tipodocs/index.ctp:35
+#: View/Tipos/index.ctp:35
+#: View/Users/index.ctp:45
+msgid "previous"
+msgstr "anterior"
+
+#: View/Categorias/index.ctp:37
+#: View/Categories/index.ctp:37
+#: View/Cobradores/index.ctp:43
+#: View/Cuotas/admin_index.ctp:55
+#: View/Cuotas/index.ctp:75
+#: View/Cuotasanuals/index.ctp:45
+#: View/Localidades/index.ctp:41
+#: View/Provincias/admin_index.ctp:35
+#: View/Provincias/index.ctp:35
+#: View/Recibos/index.ctp:73
+#: View/Rols/index.ctp:43
+#: View/Socios/index.ctp:128
+#: View/Tipocambios/index.ctp:37
+#: View/Tipodocs/index.ctp:37
+#: View/Tipos/index.ctp:37
+#: View/Users/index.ctp:47
+msgid "next"
+msgstr "próximo"
+
+#: View/Categorias/index.ctp:44
+#: View/Categorias/view.ctp:27
+#, fuzzy
+msgid "New Categoria"
+msgstr "Nuevo Categoría"
+
+#: View/Categorias/view.ctp:2
+#: View/Socios/view.ctp:189
+#, fuzzy
+msgid "Categoria"
+msgstr "Categorías"
+
+#: View/Categorias/view.ctp:4;37
+#: View/Categories/view.ctp:4
+#: View/Cobradores/view.ctp:4;52
+#: View/Cuotas/admin_view.ctp:4
+#: View/Cuotasanuals/view.ctp:4
+#: View/Localidades/view.ctp:4;44
+#: View/Provincias/admin_view.ctp:4;32
+#: View/Provincias/view.ctp:4;32
+#: View/Recibos/view.ctp:4
+#: View/Rols/view.ctp:4;52
+#: View/Tipocambios/view.ctp:4;37
+#: View/Tipodocs/view.ctp:4;37
+#: View/Tipos/view.ctp:4;37
+#: View/Users/view.ctp:4
+msgid "Id"
+msgstr "ID"
+
+#: View/Categorias/view.ctp:9
+#: View/Categories/view.ctp:9
+#, fuzzy
+msgid "Descripcion"
+msgstr "Descripción"
+
+#: View/Categorias/view.ctp:14
+#: View/Categories/view.ctp:14
+#: View/Cuotas/admin_view.ctp:9
+#: View/Cuotas/view.ctp:4
+#: View/Cuotasanuals/view.ctp:14
+#: View/Recibos/view.ctp:9;65
+msgid "Importe"
+msgstr ""
+
+#: View/Categorias/view.ctp:25
+#, fuzzy
+msgid "Delete Categoria"
+msgstr "Eliminar Categoría"
+
+#: View/Categorias/view.ctp:33
+#: View/Cobradores/view.ctp:48
+#: View/Localidades/view.ctp:40
+#: View/Tipocambios/view.ctp:33
+#: View/Tipodocs/view.ctp:33
+#: View/Tipos/view.ctp:33
+#, fuzzy
+msgid "Related Socios"
+msgstr "Eliminar Socio"
+
+#: View/Categorias/view.ctp:38
+#: View/Cobradores/view.ctp:53
+#: View/Localidades/view.ctp:45
+#: View/Socios/view.ctp:9
+#: View/Tipocambios/view.ctp:38
+#: View/Tipodocs/view.ctp:38
+#: View/Tipos/view.ctp:38
+msgid "Numero Entrada"
+msgstr ""
+
+#: View/Categorias/view.ctp:39
+#: View/Cobradores/view.ctp:54
+#: View/Localidades/view.ctp:46
+#: View/Socios/view.ctp:14
+#: View/Tipocambios/view.ctp:39
+#: View/Tipodocs/view.ctp:39
+#: View/Tipos/view.ctp:39
+msgid "Apellido"
+msgstr ""
+
+#: View/Categorias/view.ctp:40
+#: View/Cobradores/view.ctp:55
+#: View/Localidades/view.ctp:47
+#: View/Socios/view.ctp:19
+#: View/Tipocambios/view.ctp:40
+#: View/Tipodocs/view.ctp:40
+#: View/Tipos/view.ctp:40
+msgid "Nombre"
+msgstr ""
+
+#: View/Categorias/view.ctp:41
+#: View/Cobradores/view.ctp:56
+#: View/Localidades/view.ctp:48
+#: View/Socios/view.ctp:24
+#: View/Tipocambios/view.ctp:41
+#: View/Tipodocs/view.ctp:41
+#: View/Tipos/view.ctp:41
+msgid "Denominacion"
+msgstr ""
+
+#: View/Categorias/view.ctp:42
+#: View/Cobradores/view.ctp:57
+#: View/Localidades/view.ctp:49
+#: View/Socios/view.ctp:29
+#: View/Tipocambios/view.ctp:42
+#: View/Tipodocs/view.ctp:42
+#: View/Tipos/view.ctp:42
+#, fuzzy
+msgid "Docnumber"
+msgstr "Número"
+
+#: View/Categorias/view.ctp:43
+#: View/Cobradores/view.ctp:58
+#: View/Localidades/view.ctp:50
+#: View/Socios/view.ctp:34
+#: View/Tipocambios/view.ctp:43
+#: View/Tipodocs/view.ctp:43
+#: View/Tipos/view.ctp:43
+msgid "Cuit"
+msgstr "CUIT"
+
+#: View/Categorias/view.ctp:44
+#: View/Cobradores/view.ctp:59
+#: View/Localidades/view.ctp:51
+#: View/Socios/view.ctp:39
+#: View/Tipocambios/view.ctp:44
+#: View/Tipodocs/view.ctp:44
+#: View/Tipos/view.ctp:44
+msgid "Calle"
+msgstr ""
+
+#: View/Categorias/view.ctp:45
+#: View/Cobradores/view.ctp:60
+#: View/Localidades/view.ctp:52
+#: View/Socios/view.ctp:44
+#: View/Tipocambios/view.ctp:45
+#: View/Tipodocs/view.ctp:45
+#: View/Tipos/view.ctp:45
+#, fuzzy
+msgid "Numero"
+msgstr "numérico"
+
+#: View/Categorias/view.ctp:46
+#: View/Cobradores/view.ctp:61
+#: View/Localidades/view.ctp:53
+#: View/Socios/view.ctp:49
+#: View/Tipocambios/view.ctp:46
+#: View/Tipodocs/view.ctp:46
+#: View/Tipos/view.ctp:46
+msgid "Piso"
+msgstr ""
+
+#: View/Categorias/view.ctp:47
+#: View/Cobradores/view.ctp:62
+#: View/Localidades/view.ctp:54
+#: View/Tipocambios/view.ctp:47
+#: View/Tipodocs/view.ctp:47
+#: View/Tipos/view.ctp:47
+msgid "Localidad Id"
+msgstr ""
+
+#: View/Categorias/view.ctp:48
+#: View/Cobradores/view.ctp:63
+#: View/Localidades/view.ctp:55
+#: View/Socios/view.ctp:59
+#: View/Tipocambios/view.ctp:48
+#: View/Tipodocs/view.ctp:48
+#: View/Tipos/view.ctp:48
+msgid "Ingreso"
+msgstr ""
+
+#: View/Categorias/view.ctp:49
+#: View/Cobradores/view.ctp:64
+#: View/Localidades/view.ctp:56
+#: View/Socios/view.ctp:64
+#: View/Tipocambios/view.ctp:49
+#: View/Tipodocs/view.ctp:49
+#: View/Tipos/view.ctp:49
+msgid "Egreso"
+msgstr ""
+
+#: View/Categorias/view.ctp:50
+#: View/Cobradores/view.ctp:65
+#: View/Localidades/view.ctp:57
+#: View/Socios/view.ctp:69
+#: View/Tipocambios/view.ctp:50
+#: View/Tipodocs/view.ctp:50
+#: View/Tipos/view.ctp:50
+msgid "Causa"
+msgstr ""
+
+#: View/Categorias/view.ctp:51
+#: View/Cobradores/view.ctp:66
+#: View/Localidades/view.ctp:58
+#: View/Socios/view.ctp:74
+#: View/Tipocambios/view.ctp:51
+#: View/Tipodocs/view.ctp:51
+#: View/Tipos/view.ctp:51
+#, fuzzy
+msgid "Cuentas Suscriptas"
+msgstr "Cuotas Relacionadas"
+
+#: View/Categorias/view.ctp:52
+#: View/Cobradores/view.ctp:67
+#: View/Localidades/view.ctp:59
+#: View/Socios/view.ctp:79
+#: View/Tipocambios/view.ctp:52
+#: View/Tipodocs/view.ctp:52
+#: View/Tipos/view.ctp:52
+msgid "Cuentas Integradas"
+msgstr ""
+
+#: View/Categorias/view.ctp:53
+#: View/Cobradores/view.ctp:29;68
+#: View/Cuotas/admin_view.ctp:14
+#: View/Cuotas/view.ctp:15
+#: View/Localidades/view.ctp:60
+#: View/Recibos/view.ctp:66
+#: View/Socios/view.ctp:84
+#: View/Tipocambios/view.ctp:53
+#: View/Tipodocs/view.ctp:53
+#: View/Tipos/view.ctp:53
+#, fuzzy
+msgid "Observaciones"
+msgstr "Observaciones Importe"
+
+#: View/Categorias/view.ctp:54
+#: View/Cobradores/view.ctp:69
+#: View/Localidades/view.ctp:61
+#: View/Socios/view.ctp:89
+#: View/Tipocambios/view.ctp:54
+#: View/Tipodocs/view.ctp:54
+#: View/Tipos/view.ctp:54
+msgid "Socionum"
+msgstr ""
+
+#: View/Categorias/view.ctp:55
+#: View/Cobradores/view.ctp:70
+#: View/Localidades/view.ctp:62
+#: View/Socios/view.ctp:94
+#: View/Tipocambios/view.ctp:55
+#: View/Tipodocs/view.ctp:55
+#: View/Tipos/view.ctp:55
+msgid "Nacimiento"
+msgstr ""
+
+#: View/Categorias/view.ctp:56
+#: View/Cobradores/view.ctp:71
+#: View/Localidades/view.ctp:63
+#: View/Socios/view.ctp:99
+#: View/Tipocambios/view.ctp:56
+#: View/Tipodocs/view.ctp:56
+#: View/Tipos/view.ctp:56
+msgid "Email"
+msgstr "Correo Electrónico"
+
+#: View/Categorias/view.ctp:57
+#: View/Cobradores/view.ctp:72
+#: View/Localidades/view.ctp:64
+#: View/Socios/view.ctp:104
+#: View/Tipocambios/view.ctp:57
+#: View/Tipodocs/view.ctp:57
+#: View/Tipos/view.ctp:57
+msgid "Caracteristica"
+msgstr ""
+
+#: View/Categorias/view.ctp:58
+#: View/Cobradores/view.ctp:19;73
+#: View/Localidades/view.ctp:65
+#: View/Socios/view.ctp:109
+#: View/Tipocambios/view.ctp:58
+#: View/Tipodocs/view.ctp:58
+#: View/Tipos/view.ctp:58
+#, fuzzy
+msgid "Telefono"
+msgstr "Teléfono"
+
+#: View/Categorias/view.ctp:59
+#: View/Cobradores/view.ctp:74
+#: View/Localidades/view.ctp:66
+#: View/Socios/view.ctp:114
+#: View/Tipocambios/view.ctp:59
+#: View/Tipodocs/view.ctp:59
+#: View/Tipos/view.ctp:59
+msgid "Celular"
+msgstr ""
+
+#: View/Categorias/view.ctp:60
+#: View/Cobradores/view.ctp:75
+#: View/Localidades/view.ctp:67
+#: View/Socios/view.ctp:119
+#: View/Tipocambios/view.ctp:60
+#: View/Tipodocs/view.ctp:60
+#: View/Tipos/view.ctp:60
+msgid "Presentador"
+msgstr ""
+
+#: View/Categorias/view.ctp:61
+#: View/Cobradores/view.ctp:76
+#: View/Localidades/view.ctp:68
+#: View/Socios/view.ctp:124
+#: View/Tipocambios/view.ctp:61
+#: View/Tipodocs/view.ctp:61
+#: View/Tipos/view.ctp:61
+msgid "Profesion"
+msgstr ""
+
+#: View/Categorias/view.ctp:62
+#: View/Cobradores/view.ctp:77
+#: View/Localidades/view.ctp:69
+#: View/Socios/view.ctp:129
+#: View/Tipocambios/view.ctp:62
+#: View/Tipodocs/view.ctp:62
+#: View/Tipos/view.ctp:62
+#, fuzzy
+msgid "Campa Socios"
+msgstr "Listar Socios"
+
+#: View/Categorias/view.ctp:63
+#: View/Cobradores/view.ctp:78
+#: View/Localidades/view.ctp:70
+#: View/Socios/view.ctp:134
+#: View/Tipocambios/view.ctp:63
+#: View/Tipodocs/view.ctp:63
+#: View/Tipos/view.ctp:63
+#, fuzzy
+msgid "Ent Solicitud"
+msgstr "Editar Socio"
+
+#: View/Categorias/view.ctp:64
+#: View/Cobradores/view.ctp:79
+#: View/Localidades/view.ctp:71
+#: View/Socios/view.ctp:139
+#: View/Tipocambios/view.ctp:64
+#: View/Tipodocs/view.ctp:64
+#: View/Tipos/view.ctp:64
+msgid "Ent Dni"
+msgstr ""
+
+#: View/Categorias/view.ctp:65
+#: View/Cobradores/view.ctp:80
+#: View/Localidades/view.ctp:72
+#: View/Socios/view.ctp:144
+#: View/Tipocambios/view.ctp:65
+#: View/Tipodocs/view.ctp:65
+#: View/Tipos/view.ctp:65
+msgid "Ent Servicio"
+msgstr ""
+
+#: View/Categorias/view.ctp:66
+#: View/Cobradores/view.ctp:81
+#: View/Localidades/view.ctp:73
+#: View/Socios/view.ctp:149
+#: View/Tipocambios/view.ctp:66
+#: View/Tipodocs/view.ctp:66
+#: View/Tipos/view.ctp:66
+msgid "Cobranza Domicilio"
+msgstr ""
+
+#: View/Categorias/view.ctp:67
+#: View/Cobradores/view.ctp:82
+#: View/Localidades/view.ctp:74
+#: View/Socios/view.ctp:154
+#: View/Tipocambios/view.ctp:67
+#: View/Tipodocs/view.ctp:67
+#: View/Tipos/view.ctp:67
+msgid "Cobranza Localidad"
+msgstr ""
+
+#: View/Categorias/view.ctp:68
+#: View/Cobradores/view.ctp:83
+#: View/Localidades/view.ctp:75
+#: View/Socios/view.ctp:159
+#: View/Tipocambios/view.ctp:68
+#: View/Tipodocs/view.ctp:68
+#: View/Tipos/view.ctp:68
+msgid "Cobranza No Print Rbo"
+msgstr ""
+
+#: View/Categorias/view.ctp:69
+#: View/Cobradores/view.ctp:84
+#: View/Localidades/view.ctp:76
+#: View/Socios/view.ctp:164
+#: View/Tipocambios/view.ctp:69
+#: View/Tipodocs/view.ctp:69
+#: View/Tipos/view.ctp:69
+msgid "Cobranza Zona"
+msgstr ""
+
+#: View/Categorias/view.ctp:70
+#: View/Cobradores/view.ctp:85
+#: View/Localidades/view.ctp:77
+#: View/Socios/view.ctp:169
+#: View/Tipocambios/view.ctp:70
+#: View/Tipodocs/view.ctp:70
+#: View/Tipos/view.ctp:70
+msgid "Cobranza Recorrido"
+msgstr ""
+
+#: View/Categorias/view.ctp:71
+#: View/Cobradores/view.ctp:86
+#: View/Localidades/view.ctp:78
+#: View/Socios/view.ctp:174
+#: View/Tipocambios/view.ctp:71
+#: View/Tipodocs/view.ctp:71
+#: View/Tipos/view.ctp:71
+msgid "Foto"
+msgstr ""
+
+#: View/Categorias/view.ctp:72
+#: View/Cobradores/view.ctp:87
+#: View/Localidades/view.ctp:79
+#: View/Socios/view.ctp:179
+#: View/Tipocambios/view.ctp:72
+#: View/Tipodocs/view.ctp:72
+#: View/Tipos/view.ctp:72
+msgid "Carnet Pago"
+msgstr ""
+
+#: View/Categorias/view.ctp:73
+#: View/Cobradores/view.ctp:88
+#: View/Localidades/view.ctp:80
+#: View/Socios/view.ctp:184
+#: View/Tipocambios/view.ctp:73
+#: View/Tipodocs/view.ctp:73
+#: View/Tipos/view.ctp:73
+msgid "Carnet Pedido"
+msgstr ""
+
+#: View/Categorias/view.ctp:74
+#: View/Cobradores/view.ctp:89
+#: View/Localidades/view.ctp:81
+#: View/Tipocambios/view.ctp:74
+#: View/Tipodocs/view.ctp:74
+#: View/Tipos/view.ctp:74
+#, fuzzy
+msgid "Categoria Id"
+msgstr "ID Categoría"
+
+#: View/Categorias/view.ctp:75
+#: View/Cobradores/view.ctp:90
+#: View/Localidades/view.ctp:82
+#: View/Tipocambios/view.ctp:75
+#: View/Tipodocs/view.ctp:75
+#: View/Tipos/view.ctp:75
+msgid "Cobrador Id"
+msgstr ""
+
+#: View/Categorias/view.ctp:76
+#: View/Cobradores/view.ctp:91
+#: View/Localidades/view.ctp:83
+#: View/Tipocambios/view.ctp:76
+#: View/Tipodocs/view.ctp:76
+#: View/Tipos/view.ctp:76
+msgid "Tipocambio Id"
+msgstr ""
+
+#: View/Categorias/view.ctp:77
+#: View/Cobradores/view.ctp:92
+#: View/Localidades/view.ctp:84
+#: View/Tipocambios/view.ctp:77
+#: View/Tipodocs/view.ctp:77
+#: View/Tipos/view.ctp:77
+msgid "Tipo Id"
+msgstr ""
+
+#: View/Categorias/view.ctp:78
+#: View/Cobradores/view.ctp:93
+#: View/Localidades/view.ctp:85
+#: View/Tipocambios/view.ctp:78
+#: View/Tipodocs/view.ctp:78
+#: View/Tipos/view.ctp:78
+msgid "Tipodoc Id"
+msgstr ""
 
 #: View/Categories/add.ctp:4
 msgid "Add Category"
 msgstr "Crear Categoría"
 
-#: View/Categories/add.ctp:10
-#: View/Categories/edit.ctp:11
-#: View/Members/add.ctp:18
-#: View/Members/edit.ctp:19
-#: View/Subscriptions/add.ctp:14
-#: View/Subscriptions/edit.ctp:15
-msgid "Submit"
-msgstr "Enviar"
-
-#: View/Categories/add.ctp:13
-#: View/Categories/edit.ctp:14
-#: View/Categories/index.ctp:11;46
-#: View/Categories/view.ctp:32;59
-#: View/Members/add.ctp:21
-#: View/Members/edit.ctp:22
-#: View/Members/index.ctp:19;64
-#: View/Members/view.ctp:72;98
-#: View/Subscriptions/add.ctp:17
-#: View/Subscriptions/edit.ctp:18
-#: View/Subscriptions/index.ctp:15;56
-#: View/Subscriptions/view.ctp:52
-msgid "Actions"
-msgstr "Acciones"
-
 #: View/Categories/add.ctp:16
 #: View/Categories/edit.ctp:18
-#: View/Categories/view.ctp:36
-#: View/Members/add.ctp:25
-#: View/Members/edit.ctp:27
-#: View/Members/index.ctp:67
-#: View/Members/view.ctp:78
+#: View/Categories/view.ctp:26
 msgid "List Categories"
 msgstr "Listar Categorías"
 
-#: View/Categories/add.ctp:17
-#: View/Categories/edit.ctp:19
-#: View/Categories/index.ctp:49
-#: View/Categories/view.ctp:38
-#: View/Members/add.ctp:24
-#: View/Members/edit.ctp:26
-#: View/Members/view.ctp:76
-#: View/Subscriptions/add.ctp:21
-#: View/Subscriptions/edit.ctp:23
-#: View/Subscriptions/index.ctp:59
-#: View/Subscriptions/view.ctp:58
-msgid "List Members"
-msgstr "Listar Socios"
-
-#: View/Categories/add.ctp:18
-#: View/Categories/edit.ctp:20
-#: View/Categories/index.ctp:50
-#: View/Categories/view.ctp:39;87
-#: View/Members/index.ctp:66
-#: View/Members/view.ctp:77
-#: View/Subscriptions/add.ctp:22
-#: View/Subscriptions/edit.ctp:24
-#: View/Subscriptions/index.ctp:60
-#: View/Subscriptions/view.ctp:59
-msgid "New Member"
-msgstr "Nuevo Socio"
-
 #: View/Categories/edit.ctp:4
-#: View/Categories/view.ctp:34
+#: View/Categories/view.ctp:24
 msgid "Edit Category"
 msgstr "Editar Categoría"
-
-#: View/Categories/edit.ctp:17
-#: View/Categories/index.ctp:25
-#: View/Categories/view.ctp:78
-#: View/Members/edit.ctp:25
-#: View/Members/index.ctp:43
-#: View/Members/view.ctp:114
-#: View/Subscriptions/edit.ctp:21
-#: View/Subscriptions/index.ctp:35
-msgid "Delete"
-msgstr "Eliminar"
-
-#: View/Categories/edit.ctp:17
-#: View/Categories/index.ctp:25
-#: View/Categories/view.ctp:35;78
-#: View/Members/edit.ctp:25
-#: View/Members/index.ctp:43
-#: View/Members/view.ctp:75;114
-#: View/Subscriptions/edit.ctp:21
-#: View/Subscriptions/index.ctp:35
-#: View/Subscriptions/view.ctp:55
-msgid "Are you sure you want to delete # %s?"
-msgstr "¿Está seguro que quiere eliminarlo?"
 
 #: View/Categories/index.ctp:2
 msgid "Categories"
 msgstr "Categorías"
 
-#: View/Categories/index.ctp:23
-#: View/Categories/view.ctp:76
-#: View/Members/index.ctp:41
-#: View/Members/view.ctp:112
-#: View/Subscriptions/index.ctp:33
-msgid "View"
-msgstr "Ver"
-
-#: View/Categories/index.ctp:24
-#: View/Categories/view.ctp:77
-#: View/Members/index.ctp:42
-#: View/Members/view.ctp:113
-#: View/Subscriptions/index.ctp:34
-msgid "Edit"
-msgstr "Editar"
-
-#: View/Categories/index.ctp:34
-#: View/Members/index.ctp:52
-#: View/Subscriptions/index.ctp:44
-msgid "Page {:page} of {:pages}, showing {:current} records out of {:count} total, starting on record {:start}, ending on {:end}"
-msgstr "Página {:page} de {:pages}, mostrando {:current} registros de un total de {:count}, empezando en {:start} y terminando en {:end}"
-
-#: View/Categories/index.ctp:39
-#: View/Members/index.ctp:57
-#: View/Subscriptions/index.ctp:49
-msgid "previous"
-msgstr "anterior"
-
-#: View/Categories/index.ctp:41
-#: View/Members/index.ctp:59
-#: View/Subscriptions/index.ctp:51
-msgid "next"
-msgstr "próximo"
-
-#: View/Categories/index.ctp:48
-#: View/Categories/view.ctp:37
-#: View/Members/add.ctp:26
-#: View/Members/edit.ctp:28
-#: View/Members/index.ctp:68
-#: View/Members/view.ctp:79
+#: View/Categories/index.ctp:44
+#: View/Categories/view.ctp:27
 msgid "New Category"
 msgstr "Nuevo Categoría"
 
 #: View/Categories/view.ctp:2
-#: View/Members/view.ctp:64
 msgid "Category"
 msgstr "Categoría"
 
-#: View/Categories/view.ctp:4;47
-#: View/Members/view.ctp:4;89
-#: View/Subscriptions/view.ctp:4
-msgid "Id"
-msgstr "ID"
-
-#: View/Categories/view.ctp:9;49
-#: View/Members/view.ctp:14
-msgid "Name"
-msgstr "Nombre"
-
-#: View/Categories/view.ctp:14
-msgid "Weight"
-msgstr "Peso"
-
-#: View/Categories/view.ctp:19;56
-#: View/Members/view.ctp:54;95
-#: View/Subscriptions/view.ctp:34
-msgid "Created"
-msgstr "Creado"
-
-#: View/Categories/view.ctp:24;57
-#: View/Members/view.ctp:59;96
-#: View/Subscriptions/view.ctp:39
-msgid "Modified"
-msgstr "Modificado"
-
-#: View/Categories/view.ctp:35
+#: View/Categories/view.ctp:25
 msgid "Delete Category"
 msgstr "Eliminar Categoría"
 
-#: View/Categories/view.ctp:43
-msgid "Related Members"
-msgstr "Socios relacionados"
+#: View/Cobradores/add.ctp:4
+#, fuzzy
+msgid "Add Cobrador"
+msgstr "Crear Categoría"
 
-#: View/Categories/view.ctp:48
-#: View/Members/view.ctp:9
-msgid "Number"
-msgstr "Número"
+#: View/Cobradores/add.ctp:19
+#: View/Cobradores/edit.ctp:21
+#: View/Cobradores/view.ctp:41
+#, fuzzy
+msgid "List Cobradores"
+msgstr "Listar Categorías"
 
-#: View/Categories/view.ctp:50
-#: View/Members/view.ctp:24
-msgid "Address"
-msgstr "Domicilio"
+#: View/Cobradores/edit.ctp:4
+#: View/Cobradores/view.ctp:39
+#, fuzzy
+msgid "Edit Cobrador"
+msgstr "Editar Categoría"
 
-#: View/Categories/view.ctp:51
-#: View/Members/view.ctp:29
-msgid "Telephone"
-msgstr "Teléfono"
+#: View/Cobradores/index.ctp:2
+msgid "Cobradores"
+msgstr ""
 
-#: View/Categories/view.ctp:52
-#: View/Members/view.ctp:34
-msgid "Email"
-msgstr "Correo Electrónico"
+#: View/Cobradores/index.ctp:50
+#: View/Cobradores/view.ctp:42
+#, fuzzy
+msgid "New Cobrador"
+msgstr "Nuevo Categoría"
 
-#: View/Categories/view.ctp:53
-#: View/Members/view.ctp:39
+#: View/Cobradores/view.ctp:2
+#: View/Socios/view.ctp:194
+msgid "Cobrador"
+msgstr ""
+
+#: View/Cobradores/view.ctp:9
+#: View/Localidades/view.ctp:9
+#: View/Provincias/admin_view.ctp:9;33
+#: View/Provincias/view.ctp:9;33
+#: View/Rols/view.ctp:9;55
+#: View/Tipocambios/view.ctp:14
+#: View/Tipodocs/view.ctp:14
+#: View/Tipos/view.ctp:14
+#: View/Users/view.ctp:19
+msgid "Name"
+msgstr "Nombre"
+
+#: View/Cobradores/view.ctp:14
+msgid "Direccion"
+msgstr ""
+
+#: View/Cobradores/view.ctp:24
 msgid "Dni"
 msgstr "DNI"
 
-#: View/Categories/view.ctp:54
-#: View/Members/view.ctp:44
-msgid "Delivery"
-msgstr "Cobro a domicilio"
+#: View/Cobradores/view.ctp:40
+#, fuzzy
+msgid "Delete Cobrador"
+msgstr "Eliminar Categoría"
 
-#: View/Categories/view.ctp:55
-#: View/Members/view.ctp:49
-msgid "Subscription Date"
-msgstr "Fecha de afiliación"
-
-#: View/Categories/view.ctp:58
-msgid "Category Id"
-msgstr "ID Categoría"
-
-#: View/Members/add.ctp:4
-msgid "Add Member"
-msgstr "Crear Socio"
-
-#: View/Members/add.ctp:27
-#: View/Members/edit.ctp:29
-#: View/Members/index.ctp:69
-#: View/Members/view.ctp:80
-#: View/Subscriptions/add.ctp:20
-#: View/Subscriptions/edit.ctp:22
-#: View/Subscriptions/view.ctp:56
-msgid "List Subscriptions"
+#: View/Cuotas/add.ctp:70
+#: View/Cuotas/admin_add.ctp:21
+#: View/Cuotas/admin_edit.ctp:23
+#: View/Cuotas/admin_view.ctp:61
+#: View/Cuotas/edit.ctp:72
+#: View/Cuotas/view.ctp:72
+msgid "List Cuotas"
 msgstr "Listar Cuotas"
 
-#: View/Members/add.ctp:28
-#: View/Members/edit.ctp:30
-#: View/Members/index.ctp:70
-#: View/Members/view.ctp:81;123
-#: View/Subscriptions/index.ctp:58
-#: View/Subscriptions/view.ctp:57
-msgid "New Subscription"
+#: View/Cuotas/add.ctp:71
+#: View/Cuotas/admin_add.ctp:22
+#: View/Cuotas/admin_edit.ctp:24
+#: View/Cuotas/admin_index.ctp:63
+#: View/Cuotas/admin_view.ctp:63
+#: View/Cuotas/edit.ctp:73
+#: View/Cuotas/index.ctp:83
+#: View/Cuotas/view.ctp:74
+msgid "List Recibos"
+msgstr "Listar Recibos"
+
+#: View/Cuotas/add.ctp:72
+#: View/Cuotas/admin_add.ctp:23
+#: View/Cuotas/admin_edit.ctp:25
+#: View/Cuotas/admin_index.ctp:64
+#: View/Cuotas/admin_view.ctp:64
+#: View/Cuotas/edit.ctp:74
+#: View/Cuotas/index.ctp:84
+#: View/Cuotas/view.ctp:75
+msgid "New Recibo"
+msgstr "Nuevo Recibos"
+
+#: View/Cuotas/admin_add.ctp:4
+msgid "Admin Add Cuota"
+msgstr ""
+
+#: View/Cuotas/admin_edit.ctp:4
+msgid "Admin Edit Cuota"
+msgstr ""
+
+#: View/Cuotas/admin_index.ctp:2
+#: View/Cuotas/index.ctp:2
+msgid "Cuotas"
+msgstr ""
+
+#: View/Cuotas/admin_index.ctp:62
+#: View/Cuotas/admin_view.ctp:62
+#: View/Cuotas/index.ctp:82
+#: View/Cuotas/view.ctp:73
+#: View/Recibos/view.ctp:100
+msgid "New Cuota"
 msgstr "Nueva Cuota"
 
-#: View/Members/edit.ctp:4
-#: View/Members/view.ctp:74
-msgid "Edit Member"
-msgstr "Editar Socio"
+#: View/Cuotas/admin_view.ctp:2
+#: View/Cuotas/view.ctp:2
+msgid "Cuota"
+msgstr ""
 
-#: View/Members/index.ctp:2
-msgid "Members"
-msgstr "Socios"
+#: View/Cuotas/admin_view.ctp:19
+#: View/Cuotas/view.ctp:20
+#: View/Recibos/view.ctp:67
+msgid "Vencimiento"
+msgstr ""
 
-#: View/Members/view.ctp:2
-#: View/Subscriptions/view.ctp:44
-msgid "Member"
+#: View/Cuotas/admin_view.ctp:24
+#: View/Cuotas/view.ctp:28
+#: View/Recibos/view.ctp:68
+msgid "Pagada"
+msgstr ""
+
+#: View/Cuotas/admin_view.ctp:29
+#: View/Cuotas/view.ctp:36
+#: View/Recibos/view.ctp:69
+msgid "Emitido"
+msgstr ""
+
+#: View/Cuotas/admin_view.ctp:34
+#: View/Cuotas/view.ctp:45
+#: View/Cuotasanuals/view.ctp:19
+#: View/Recibos/view.ctp:29;70
+#: View/Rols/view.ctp:19;56
+#: View/Users/view.ctp:24
+msgid "Created"
+msgstr "Creado"
+
+#: View/Cuotas/admin_view.ctp:39
+#: View/Cuotas/view.ctp:50
+#: View/Cuotasanuals/view.ctp:24
+#: View/Recibos/view.ctp:34;71
+#: View/Rols/view.ctp:24;57
+#: View/Users/view.ctp:29
+msgid "Modified"
+msgstr "Modificado"
+
+#: View/Cuotas/admin_view.ctp:44
+#: View/Cuotas/view.ctp:55
+#: View/Recibos/view.ctp:2
+msgid "Recibo"
+msgstr ""
+
+#: View/Cuotas/admin_view.ctp:49
+#: View/Cuotas/view.ctp:60
+#: View/Recibos/view.ctp:39
+#: View/Socios/view.ctp:2
+msgid "Socio"
 msgstr "Socio"
 
-#: View/Members/view.ctp:19
-msgid "Surname"
-msgstr "Apellido"
+#: View/Cuotas/admin_view.ctp:59
+#: View/Cuotas/view.ctp:70
+msgid "Edit Cuota"
+msgstr "Editar Cuota"
 
-#: View/Members/view.ctp:75
-msgid "Delete Member"
+#: View/Cuotas/admin_view.ctp:60
+#: View/Cuotas/view.ctp:71
+msgid "Delete Cuota"
+msgstr "Eliminar Cuota"
+
+#: View/Cuotasanuals/add.ctp:4
+#, fuzzy
+msgid "Add Cuotasanual"
+msgstr "Nueva Empresa"
+
+#: View/Cuotasanuals/add.ctp:17
+#: View/Cuotasanuals/edit.ctp:19
+#: View/Cuotasanuals/view.ctp:41
+#, fuzzy
+msgid "List Cuotasanuals"
+msgstr "Listar Empresas"
+
+#: View/Cuotasanuals/add.ctp:19
+#: View/Cuotasanuals/edit.ctp:21
+#: View/Cuotasanuals/index.ctp:54
+#: View/Cuotasanuals/view.ctp:44
+#, fuzzy
+msgid "New Categorias"
+msgstr "Nuevo Categoría"
+
+#: View/Cuotasanuals/edit.ctp:4
+#: View/Cuotasanuals/view.ctp:39
+#, fuzzy
+msgid "Edit Cuotasanual"
+msgstr "Editar Empresa"
+
+#: View/Cuotasanuals/index.ctp:2
+msgid "Cuotasanuals"
+msgstr ""
+
+#: View/Cuotasanuals/index.ctp:52
+#: View/Cuotasanuals/view.ctp:42
+#, fuzzy
+msgid "New Cuotasanual"
+msgstr "Nueva Empresa"
+
+#: View/Cuotasanuals/view.ctp:2
+msgid "Cuotasanual"
+msgstr ""
+
+#: View/Cuotasanuals/view.ctp:9
+msgid "Fecha"
+msgstr ""
+
+#: View/Cuotasanuals/view.ctp:40
+#, fuzzy
+msgid "Delete Cuotasanual"
+msgstr "Eliminar Empresa"
+
+#: View/Localidades/add.ctp:4
+#, fuzzy
+msgid "Add Localidad"
+msgstr "Crear Socio"
+
+#: View/Localidades/add.ctp:17
+#: View/Localidades/edit.ctp:19
+#: View/Localidades/view.ctp:31
+#: View/Provincias/add.ctp:16
+#: View/Provincias/edit.ctp:18
+#: View/Provincias/index.ctp:43
+#: View/Provincias/view.ctp:23
+#, fuzzy
+msgid "List Localidades"
+msgstr "Listar Empresas"
+
+#: View/Localidades/add.ctp:18
+#: View/Localidades/edit.ctp:20
+#: View/Localidades/index.ctp:49
+#: View/Localidades/view.ctp:33
+#: View/Provincias/add.ctp:15
+#: View/Provincias/admin_add.ctp:15
+#: View/Provincias/admin_edit.ctp:17
+#: View/Provincias/admin_view.ctp:21
+#: View/Provincias/edit.ctp:17
+#: View/Provincias/view.ctp:21
+#, fuzzy
+msgid "List Provincias"
+msgstr "Listar Socios"
+
+#: View/Localidades/add.ctp:19
+#: View/Localidades/edit.ctp:21
+#: View/Localidades/index.ctp:50
+#: View/Localidades/view.ctp:34
+#: View/Provincias/admin_index.ctp:42
+#: View/Provincias/admin_view.ctp:22
+#: View/Provincias/index.ctp:42
+#: View/Provincias/view.ctp:22
+#, fuzzy
+msgid "New Provincia"
+msgstr "Nueva persona"
+
+#: View/Localidades/edit.ctp:4
+#: View/Localidades/view.ctp:29
+#, fuzzy
+msgid "Edit Localidad"
+msgstr "Editar Socio"
+
+#: View/Localidades/index.ctp:2
+msgid "Localidades"
+msgstr ""
+
+#: View/Localidades/index.ctp:48
+#: View/Localidades/view.ctp:32
+#: View/Provincias/add.ctp:17
+#: View/Provincias/admin_add.ctp:17
+#: View/Provincias/admin_edit.ctp:19
+#: View/Provincias/admin_index.ctp:44
+#: View/Provincias/admin_view.ctp:24;56
+#: View/Provincias/edit.ctp:19
+#: View/Provincias/index.ctp:44
+#: View/Provincias/view.ctp:24;56
+#, fuzzy
+msgid "New Localidad"
+msgstr "Nuevo Socio"
+
+#: View/Localidades/view.ctp:2
+#: View/Socios/view.ctp:54
+msgid "Localidad"
+msgstr ""
+
+#: View/Localidades/view.ctp:14
+#: View/Provincias/admin_view.ctp:34
+#: View/Provincias/view.ctp:34
+msgid "Postal"
+msgstr ""
+
+#: View/Localidades/view.ctp:19
+#: View/Provincias/admin_view.ctp:2
+#: View/Provincias/view.ctp:2
+msgid "Provincia"
+msgstr ""
+
+#: View/Localidades/view.ctp:30
+#, fuzzy
+msgid "Delete Localidad"
 msgstr "Eliminar Socio"
 
-#: View/Members/view.ctp:85
-msgid "Related Subscriptions"
-msgstr "Cuotas Relacionadas"
+#: View/Provincias/add.ctp:4
+#, fuzzy
+msgid "Add Provincia"
+msgstr "Crear Persona"
 
-#: View/Members/view.ctp:90
-#: View/Subscriptions/view.ctp:9
-msgid "Title"
-msgstr "Título"
+#: View/Provincias/admin_add.ctp:4
+msgid "Admin Add Provincia"
+msgstr ""
 
-#: View/Members/view.ctp:91
-#: View/Subscriptions/view.ctp:14
+#: View/Provincias/admin_add.ctp:16
+#: View/Provincias/admin_edit.ctp:18
+#: View/Provincias/admin_index.ctp:43
+#: View/Provincias/admin_view.ctp:23
+#, fuzzy
+msgid "List Localidads"
+msgstr "Listar Socios"
+
+#: View/Provincias/admin_edit.ctp:4
+msgid "Admin Edit Provincia"
+msgstr ""
+
+#: View/Provincias/admin_index.ctp:2
+#: View/Provincias/index.ctp:2
+msgid "Provincias"
+msgstr ""
+
+#: View/Provincias/admin_view.ctp:19
+#: View/Provincias/edit.ctp:4
+#: View/Provincias/view.ctp:19
+#, fuzzy
+msgid "Edit Provincia"
+msgstr "Editar Persona"
+
+#: View/Provincias/admin_view.ctp:20
+#: View/Provincias/view.ctp:20
+#, fuzzy
+msgid "Delete Provincia"
+msgstr "Eliminar Persona"
+
+#: View/Provincias/admin_view.ctp:28
+#, fuzzy
+msgid "Related Localidads"
+msgstr "Facturas Relacionadas"
+
+#: View/Provincias/admin_view.ctp:35
+#: View/Provincias/view.ctp:35
+msgid "Provincia Id"
+msgstr ""
+
+#: View/Provincias/view.ctp:28
+#, fuzzy
+msgid "Related Localidades"
+msgstr "Facturas Relacionadas"
+
+#: View/Recibos/index.ctp:2
+msgid "Recibos"
+msgstr ""
+
+#: View/Recibos/view.ctp:14
+msgid "Emision"
+msgstr ""
+
+#: View/Recibos/view.ctp:19
+msgid "Imputado"
+msgstr ""
+
+#: View/Recibos/view.ctp:24
+msgid "Anulado"
+msgstr ""
+
+#: View/Recibos/view.ctp:60
+msgid "Related Cuotas"
+msgstr "Cuotas relacionadas"
+
+#: View/Recibos/view.ctp:72
+msgid "Recibo Id"
+msgstr ""
+
+#: View/Recibos/view.ctp:73
+msgid "Socio Id"
+msgstr ""
+
+#: View/Rols/add.ctp:4
+msgid "Add Rol"
+msgstr "Agregar Rol"
+
+#: View/Rols/add.ctp:17
+#: View/Rols/edit.ctp:19
+#: View/Rols/view.ctp:41
+#: View/Users/add.ctp:19
+#: View/Users/edit.ctp:21
+#: View/Users/index.ctp:55
+#: View/Users/view.ctp:48
+msgid "List Rols"
+msgstr "Listar Roles"
+
+#: View/Rols/add.ctp:18
+#: View/Rols/edit.ctp:20
+#: View/Rols/index.ctp:51
+#: View/Rols/view.ctp:43
+#: View/Users/add.ctp:18
+#: View/Users/edit.ctp:20
+#: View/Users/view.ctp:46
+msgid "List Users"
+msgstr "Listar Usuarios"
+
+#: View/Rols/add.ctp:19
+#: View/Rols/edit.ctp:21
+#: View/Rols/index.ctp:52
+#: View/Rols/view.ctp:44;82
+#: View/Users/index.ctp:54
+#: View/Users/view.ctp:47
+msgid "New User"
+msgstr "Nuevo Usuario"
+
+#: View/Rols/edit.ctp:4
+#: View/Rols/view.ctp:39
+msgid "Edit Rol"
+msgstr "Editar Rol"
+
+#: View/Rols/index.ctp:2
+msgid "Rols"
+msgstr "Roles"
+
+#: View/Rols/index.ctp:50
+#: View/Rols/view.ctp:42
+#: View/Users/add.ctp:20
+#: View/Users/edit.ctp:22
+#: View/Users/index.ctp:56
+#: View/Users/view.ctp:49
+msgid "New Rol"
+msgstr "Nuevo Rol"
+
+#: View/Rols/view.ctp:2
+#: View/Users/view.ctp:34
+#, fuzzy
+msgid "Rol"
+msgstr "Roles"
+
+#: View/Rols/view.ctp:14
 msgid "Description"
 msgstr "Descripción"
 
-#: View/Members/view.ctp:92
-#: View/Subscriptions/view.ctp:19
-msgid "State"
-msgstr "Provincia"
+#: View/Rols/view.ctp:29
+msgid "Weight"
+msgstr "Peso"
 
-#: View/Members/view.ctp:93
-#: View/Subscriptions/view.ctp:24
-msgid "Period"
-msgstr "Periodo"
+#: View/Rols/view.ctp:40
+msgid "Delete Rol"
+msgstr "Eliminar Rol"
 
-#: View/Members/view.ctp:94
-#: View/Subscriptions/view.ctp:29
-msgid "Price"
-msgstr "Precio"
+#: View/Rols/view.ctp:48
+#, fuzzy
+msgid "Related Users"
+msgstr "Eliminar Propietarios"
 
-#: View/Members/view.ctp:97
-msgid "Member Id"
-msgstr "ID Socio"
+#: View/Rols/view.ctp:53
+#: View/Users/view.ctp:9
+msgid "Username"
+msgstr "Nombre de Usuario"
 
-#: View/Subscriptions/add.ctp:4
-msgid "Add Subscription"
-msgstr "Crear Cuota"
+#: View/Rols/view.ctp:54
+#: View/Users/view.ctp:14
+msgid "Password"
+msgstr "Contraseña"
 
-#: View/Subscriptions/edit.ctp:4
-#: View/Subscriptions/view.ctp:54
-msgid "Edit Subscription"
-msgstr "Editar cuota"
+#: View/Rols/view.ctp:58
+msgid "Rol Id"
+msgstr ""
 
-#: View/Subscriptions/index.ctp:2
-msgid "Subscriptions"
-msgstr "Cuotas"
+#: View/Socios/index.ctp:2
+msgid "Socios"
+msgstr "Socios"
 
-#: View/Subscriptions/view.ctp:2
-msgid "Subscription"
-msgstr "Cuota"
+#: View/Socios/view.ctp:199
+#: View/Tipocambios/view.ctp:2
+msgid "Tipocambio"
+msgstr ""
 
-#: View/Subscriptions/view.ctp:55
-msgid "Delete Subscription"
-msgstr "Eliminar Cuota"
+#: View/Socios/view.ctp:204
+#: View/Tipos/view.ctp:2
+msgid "Tipo"
+msgstr ""
 
-#: Model/Category.php:validation
-#: for field name Model/Member.php:validation
-#: name;validation surname;validation address;validation telephone;validation
-#: dni Model/Subscription.php:validation
-#: title
-msgid "notEmpty"
-msgstr "No vacío"
+#: View/Socios/view.ctp:209
+#: View/Tipodocs/view.ctp:2
+msgid "Tipodoc"
+msgstr ""
 
-#: Model/Category.php:validation
-#: for field weight Model/Member.php:validation
-#: number;validation category_id Model/Subscription.php:validation
-#: price
+#: View/Tipocambios/add.ctp:4
+#, fuzzy
+msgid "Add Tipocambio"
+msgstr "Crear Socio"
+
+#: View/Tipocambios/add.ctp:16
+#: View/Tipocambios/edit.ctp:18
+#: View/Tipocambios/view.ctp:26
+#, fuzzy
+msgid "List Tipocambios"
+msgstr "Listar Socios"
+
+#: View/Tipocambios/edit.ctp:4
+#: View/Tipocambios/view.ctp:24
+#, fuzzy
+msgid "Edit Tipocambio"
+msgstr "Editar Socio"
+
+#: View/Tipocambios/index.ctp:2
+msgid "Tipocambios"
+msgstr ""
+
+#: View/Tipocambios/index.ctp:44
+#: View/Tipocambios/view.ctp:27
+#, fuzzy
+msgid "New Tipocambio"
+msgstr "Nuevo Socio"
+
+#: View/Tipocambios/view.ctp:9
+#: View/Tipodocs/view.ctp:9
+#: View/Tipos/view.ctp:9
+msgid "Abreviatura"
+msgstr ""
+
+#: View/Tipocambios/view.ctp:25
+#, fuzzy
+msgid "Delete Tipocambio"
+msgstr "Eliminar Socio"
+
+#: View/Tipodocs/add.ctp:4
+#, fuzzy
+msgid "Add Tipodoc"
+msgstr "Crear Tipo"
+
+#: View/Tipodocs/add.ctp:16
+#: View/Tipodocs/edit.ctp:18
+#: View/Tipodocs/view.ctp:26
+#, fuzzy
+msgid "List Tipodocs"
+msgstr "Listar Tipos"
+
+#: View/Tipodocs/edit.ctp:4
+#: View/Tipodocs/view.ctp:24
+#, fuzzy
+msgid "Edit Tipodoc"
+msgstr "Editar Tipo"
+
+#: View/Tipodocs/index.ctp:2
+msgid "Tipodocs"
+msgstr ""
+
+#: View/Tipodocs/index.ctp:44
+#: View/Tipodocs/view.ctp:27
+#, fuzzy
+msgid "New Tipodoc"
+msgstr "Nuevo Tipo"
+
+#: View/Tipodocs/view.ctp:25
+#, fuzzy
+msgid "Delete Tipodoc"
+msgstr "Eliminar Tipo"
+
+#: View/Tipos/add.ctp:4
+#, fuzzy
+msgid "Add Tipo"
+msgstr "Crear Tipo"
+
+#: View/Tipos/add.ctp:16
+#: View/Tipos/edit.ctp:18
+#: View/Tipos/view.ctp:26
+#, fuzzy
+msgid "List Tipos"
+msgstr "Listar Tipos"
+
+#: View/Tipos/edit.ctp:4
+#: View/Tipos/view.ctp:24
+#, fuzzy
+msgid "Edit Tipo"
+msgstr "Editar Tipo"
+
+#: View/Tipos/index.ctp:2
+msgid "Tipos"
+msgstr ""
+
+#: View/Tipos/index.ctp:44
+#: View/Tipos/view.ctp:27
+#, fuzzy
+msgid "New Tipo"
+msgstr "Nuevo Tipo"
+
+#: View/Tipos/view.ctp:25
+#, fuzzy
+msgid "Delete Tipo"
+msgstr "Eliminar Tipo"
+
+#: View/Users/add.ctp:4
+msgid "Add User"
+msgstr "Crear Usuario"
+
+#: View/Users/edit.ctp:4
+#: View/Users/view.ctp:44
+msgid "Edit User"
+msgstr "Editar Usuario"
+
+#: View/Users/index.ctp:2
+msgid "Users"
+msgstr "Usuarios"
+
+#: View/Users/login.ctp:11;16
+msgid "Nombre de Usuario"
+msgstr ""
+
+#: View/Users/login.ctp:26;31
+msgid "Contraseña"
+msgstr ""
+
+#: View/Users/view.ctp:2
+msgid "User"
+msgstr "Usuario"
+
+#: View/Users/view.ctp:45
+msgid "Delete User"
+msgstr "Eliminar Usuario"
+
+#: View/ViewBlock.php:78
+msgid "A view block with the name '%s' is already/still open."
+msgstr ""
+
+#: Model/Categoria.php:validation
+#: for field importe Model/Cuota.php:validation
+#: Model/Cuotasanual.php:validation
+#: Model/Localidad.php:validation
+#: provincia_id Model/Recibo.php:validation
+#: socio_id
+#: Model/Socio.php:validation
+#: categoria_id;validation cobrador_id;validation
+#: tipo_id;validation tipodoc_id
 msgid "numeric"
 msgstr "numérico"
 
-#: Model/Member.php:validation
-#: for field email
-msgid "email"
-msgstr "Correo Electrónico"
+#: Model/Cobrador.php:validation
+#: for field name Model/Localidad.php:validation
+#: Model/Provincia.php:validation
+#: Model/Tipo.php:validation
+#: abreviatura
+#: Model/Tipocambio.php:validation
+#: abreviatura;validation
+#: Model/Tipodoc.php:validation
+msgid "notEmpty"
+msgstr "No vacío"
 
-#: Model/Member.php:validation
-#: for field delivery
-#: Model/Subscription.php:validation
-#: state
+#: Model/Cuota.php:validation
+#: for field pagada;validation emitido
+#: Model/Recibo.php:validation
+#: imputado;validation anulado
+#: Model/Socio.php:validation
+#: ent_solicitud;validation ent_dni;validation
+#: ent_servicio;validation cobranza_no_print_rbo;validation
+#: carnet_pago;validation carnet_pedido
 msgid "boolean"
 msgstr ""
 
-#: Model/Member.php:validation
-#: for field subscription_date
-#: Model/Subscription.php:validation
-#: period
+#: Model/Cuotasanual.php:validation
+#: for field fecha
 msgid "date"
 msgstr "fecha"
 
-#: Model/Subscription.php:validation
-#: for field member_id
-msgid "uuid"
-msgstr ""
+#~ msgid "Invalid member"
+#~ msgstr "Socio inválido"
+
+#~ msgid "The member has been saved."
+#~ msgstr "El socio ha sido guardado."
+
+#~ msgid "The member could not be saved. Please, try again."
+#~ msgstr "El socio no ha sido guardado.. Por favor, intente nuevamente."
+
+#~ msgid "The member has been deleted."
+#~ msgstr "El socio ha sido eliminado."
+
+#~ msgid "The member could not be deleted. Please, try again."
+#~ msgstr "El socio no ha sido eliminado. Por favor, intente nuevamente."
+
+#~ msgid "Invalid subscription"
+#~ msgstr "La cuota es inválida"
+
+#~ msgid "The subscription has been saved."
+#~ msgstr "La cuota ha sido guardado."
+
+#~ msgid "The subscription could not be saved. Please, try again."
+#~ msgstr "La cuota no ha sido guardado.. Por favor, intente nuevamente."
+
+#~ msgid "The subscription has been deleted."
+#~ msgstr "La cuota ha sido eliminado."
+
+#~ msgid "The subscription could not be deleted. Please, try again."
+#~ msgstr "La cuota no ha sido eliminado. Por favor, intente nuevamente."
+
+#~ msgid "List Members"
+#~ msgstr "Listar Socios"
+
+#~ msgid "New Member"
+#~ msgstr "Nuevo Socio"
+
+#~ msgid "Related Members"
+#~ msgstr "Socios relacionados"
+
+#~ msgid "Number"
+#~ msgstr "Número"
+
+#~ msgid "Address"
+#~ msgstr "Domicilio"
+
+#~ msgid "Delivery"
+#~ msgstr "Cobro a domicilio"
+
+#~ msgid "Subscription Date"
+#~ msgstr "Fecha de afiliación"
+
+#~ msgid "Add Member"
+#~ msgstr "Crear Socio"
+
+#~ msgid "List Subscriptions"
+#~ msgstr "Listar Cuotas"
+
+#~ msgid "New Subscription"
+#~ msgstr "Nueva Cuota"
+
+#~ msgid "Edit Member"
+#~ msgstr "Editar Socio"
+
+#~ msgid "Members"
+#~ msgstr "Socios"
+
+#~ msgid "Member"
+#~ msgstr "Socio"
+
+#~ msgid "Delete Member"
+#~ msgstr "Eliminar Socio"
+
+#~ msgid "Title"
+#~ msgstr "Título"
+
+#~ msgid "State"
+#~ msgstr "Provincia"
+
+#~ msgid "Period"
+#~ msgstr "Periodo"
+
+#~ msgid "Price"
+#~ msgstr "Precio"
+
+#~ msgid "Member Id"
+#~ msgstr "ID Socio"
+
+#~ msgid "Add Subscription"
+#~ msgstr "Crear Cuota"
+
+#~ msgid "Edit Subscription"
+#~ msgstr "Editar cuota"
+
+#~ msgid "Subscriptions"
+#~ msgstr "Cuotas"
+
+#~ msgid "Subscription"
+#~ msgstr "Cuota"
+
+#~ msgid "Delete Subscription"
+#~ msgstr "Eliminar Cuota"
+
+#~ msgid "email"
+#~ msgstr "Correo Electrónico"
 
 #~ msgid "Invalid check"
 #~ msgstr "Cheque inválido"
@@ -449,21 +2024,6 @@ msgstr ""
 
 #~ msgid "The check could not be deleted. Please, try again."
 #~ msgstr "El cheque no ha sido eliminado. Por favor, intente nuevamente."
-
-#~ msgid "Invalid company"
-#~ msgstr "Empresa inválida"
-
-#~ msgid "The company has been saved."
-#~ msgstr "La empresa ha sido guardada."
-
-#~ msgid "The company could not be saved. Please, try again."
-#~ msgstr "La empresa no ha sido guardada. Por favor, intente nuevamente."
-
-#~ msgid "The company has been deleted."
-#~ msgstr "La empresa ha sido eliminada."
-
-#~ msgid "The company could not be deleted. Please, try again."
-#~ msgstr "La empresa no ha sido eliminada. Por favor, intente nuevamente."
 
 #, fuzzy
 #~ msgid "Invalid doctype"
@@ -515,21 +2075,6 @@ msgstr ""
 #~ msgid "The invoice could not be deleted. Please, try again."
 #~ msgstr "La factura no ha sido eliminada. Por favor, intente nuevamente."
 
-#~ msgid "Invalid iva"
-#~ msgstr "IVA inválida"
-
-#~ msgid "The iva has been saved."
-#~ msgstr "El IVA ha sido guardado."
-
-#~ msgid "The iva could not be saved. Please, try again."
-#~ msgstr "El IVA no ha sido guardado. Por favor, intente nuevamente."
-
-#~ msgid "The iva has been deleted."
-#~ msgstr "El IVA ha sido eliminado."
-
-#~ msgid "The iva could not be deleted. Please, try again."
-#~ msgstr "El IVA no ha sido eliminado. Por favor, intente nuevamente."
-
 #, fuzzy
 #~ msgid "Invalid ivatype"
 #~ msgstr "Tipo inválido"
@@ -554,30 +2099,16 @@ msgstr ""
 #~ msgstr "La cuota ha sido guardada."
 
 #~ msgid "The notascredito could not be saved. Please, try again."
-#~ msgstr ""
-#~ "La cuota no ha sido guardada.. Por favor, intente nuevamente."
+#~ msgstr "La cuota no ha sido guardada.. Por favor, intente nuevamente."
 
 #~ msgid "The notascredito has been deleted."
 #~ msgstr "La cuota ha sido eliminada."
 
 #~ msgid "The notascredito could not be deleted. Please, try again."
-#~ msgstr ""
-#~ "La cuota no ha sido eliminado. Por favor, intente nuevamente."
+#~ msgstr "La cuota no ha sido eliminado. Por favor, intente nuevamente."
 
 #~ msgid "Invalid owner"
 #~ msgstr "Propietario inválido"
-
-#~ msgid "The owner has been saved."
-#~ msgstr "El propietario ha sido guardado."
-
-#~ msgid "The owner could not be saved. Please, try again."
-#~ msgstr "El propietario no ha sido guardado.. Por favor, intente nuevamente."
-
-#~ msgid "The owner has been deleted."
-#~ msgstr "El propietario ha sido eliminado."
-
-#~ msgid "The owner could not be deleted. Please, try again."
-#~ msgstr "El propietario no ha sido eliminado. Por favor, intente nuevamente."
 
 #~ msgid "Invalid paymentcondition"
 #~ msgstr "Condición de pago inválida"
@@ -596,21 +2127,6 @@ msgstr ""
 #~ msgstr ""
 #~ "La condición de pago no ha sido eliminada. Por favor, intente nuevamente."
 
-#~ msgid "Invalid person"
-#~ msgstr "Persona inválida"
-
-#~ msgid "The person has been saved."
-#~ msgstr "La persona ha sido guardada."
-
-#~ msgid "The person could not be saved. Please, try again."
-#~ msgstr "La persona no ha sido guardada. Por favor, intente nuevamente."
-
-#~ msgid "The person has been deleted."
-#~ msgstr "La persona ha sido eliminada."
-
-#~ msgid "The person could not be deleted. Please, try again."
-#~ msgstr "La persona no ha sido eliminada. Por favor, intente nuevamente."
-
 #~ msgid "Invalid renter"
 #~ msgstr "Socio inválido"
 
@@ -625,42 +2141,6 @@ msgstr ""
 
 #~ msgid "The renter could not be deleted. Please, try again."
 #~ msgstr "El propietario no ha sido eliminado. Por favor, intente nuevamente."
-
-#~ msgid "Invalid rol"
-#~ msgstr "Rol inválido"
-
-#~ msgid "The rol has been saved."
-#~ msgstr "El rol ha sido guardado."
-
-#~ msgid "The rol could not be saved. Please, try again."
-#~ msgstr "El rol no ha sido guardado. Por favor, intente nuevamente."
-
-#~ msgid "The rol has been deleted."
-#~ msgstr "El rol ha sido eliminado."
-
-#~ msgid "The rol could not be deleted. Please, try again."
-#~ msgstr "El rol no ha sido eliminado. Por favor, intente nuevamente."
-
-#~ msgid "Invalid type"
-#~ msgstr "Tipo inválido"
-
-#~ msgid "The type has been saved."
-#~ msgstr "El tipo ha sido guardado."
-
-#~ msgid "The type could not be saved. Please, try again."
-#~ msgstr "El tipo no ha sido guardado. Por favor, intente nuevamente."
-
-#~ msgid "The type has been deleted."
-#~ msgstr "El tipo ha sido eliminado."
-
-#~ msgid "The type could not be deleted. Please, try again."
-#~ msgstr "El tipo no ha sido eliminado. Por favor, intente nuevamente"
-
-#~ msgid "Invalid user"
-#~ msgstr "Usuario inválido"
-
-#~ msgid "Invalid username or password, try again"
-#~ msgstr "Usuario o contraseña inválido."
 
 #~ msgid "Add Check"
 #~ msgstr "Agregar Cheque"
@@ -698,38 +2178,17 @@ msgstr ""
 #~ msgid "Delete Check"
 #~ msgstr "Eliminar Cheques"
 
-#~ msgid "Add Company"
-#~ msgstr "Nueva Empresa"
-
-#~ msgid "List Companies"
-#~ msgstr "Listar Empresas"
-
 #~ msgid "List Estates"
 #~ msgstr "Listar Socios"
 
 #~ msgid "New Estate"
 #~ msgstr "Nuevo Socio"
 
-#~ msgid "Edit Company"
-#~ msgstr "Editar Empresa"
-
 #~ msgid "Companies"
 #~ msgstr "Empresas"
 
-#~ msgid "New Company"
-#~ msgstr "Nueva Empresa"
-
 #~ msgid "Company"
 #~ msgstr "Empresa"
-
-#~ msgid "Cuit"
-#~ msgstr "CUIT"
-
-#~ msgid "Delete Company"
-#~ msgstr "Eliminar Empresa"
-
-#~ msgid "Related Estates"
-#~ msgstr "Socios relacionados"
 
 #~ msgid "Ficha"
 #~ msgstr "Número Ficha"
@@ -803,21 +2262,6 @@ msgstr ""
 #~ msgid "Renter"
 #~ msgstr "Socio"
 
-#~ msgid "Add Socio"
-#~ msgstr "Crear Socio"
-
-#~ msgid "List Socios"
-#~ msgstr "Listar Socios"
-
-#~ msgid "Edit Socio"
-#~ msgstr "Editar Socio"
-
-#~ msgid "New Socio"
-#~ msgstr "Nuevo Socio"
-
-#~ msgid "Delete Socio"
-#~ msgstr "Eliminar Socio"
-
 #~ msgid "Add Invoice"
 #~ msgstr "Crear Factura"
 
@@ -878,9 +2322,6 @@ msgstr ""
 #~ msgid "List People"
 #~ msgstr "Listar personas"
 
-#~ msgid "New Person"
-#~ msgstr "Nueva persona"
-
 #~ msgid "Edit Iva"
 #~ msgstr "Editar IVA"
 
@@ -927,9 +2368,6 @@ msgstr ""
 #~ msgid "Delete Ivatype"
 #~ msgstr "Eliminar IVA"
 
-#~ msgid "Related Invoices"
-#~ msgstr "Facturas Relacionadas"
-
 #~ msgid "Type"
 #~ msgstr "Tipo"
 
@@ -942,9 +2380,6 @@ msgstr ""
 
 #~ msgid "Stamped"
 #~ msgstr "Sellado"
-
-#~ msgid "Observation Price"
-#~ msgstr "Observaciones Importe"
 
 #~ msgid "Observation Tgi"
 #~ msgstr "Observaciones TGI"
@@ -981,18 +2416,8 @@ msgstr ""
 #~ msgid "New Paymentcondition"
 #~ msgstr "Nueva condición de pago"
 
-#~ msgid "List Types"
-#~ msgstr "Listar Tipos"
-
-#~ msgid "New Type"
-#~ msgstr "Nuevo Tipo"
-
 #~ msgid "New Notascredito"
 #~ msgstr "Nueva cuota"
-
-#, fuzzy
-#~ msgid "Docnumber"
-#~ msgstr "Número"
 
 #~ msgid "Paymentcondition"
 #~ msgstr "Condición de pago"
@@ -1021,23 +2446,11 @@ msgstr ""
 #~ msgid "Delete Paymentcondition"
 #~ msgstr "Eliminar Socio"
 
-#~ msgid "Add Person"
-#~ msgstr "Crear Persona"
-
-#~ msgid "Edit Person"
-#~ msgstr "Editar Persona"
-
 #~ msgid "People"
 #~ msgstr "Personas"
 
 #~ msgid "Person"
 #~ msgstr "Persona"
-
-#~ msgid "Delete Person"
-#~ msgstr "Eliminar Persona"
-
-#~ msgid "Related Owners"
-#~ msgstr "Eliminar Propietarios"
 
 #~ msgid "Person Id"
 #~ msgstr "Persona ID"
@@ -1045,59 +2458,8 @@ msgstr ""
 #~ msgid "Renters"
 #~ msgstr "Socios"
 
-#~ msgid "Add Rol"
-#~ msgstr "Agregar Rol"
-
-#~ msgid "List Rols"
-#~ msgstr "Listar Roles"
-
-#~ msgid "List Users"
-#~ msgstr "Listar Usuarios"
-
-#~ msgid "New User"
-#~ msgstr "Nuevo Usuario"
-
-#~ msgid "Edit Rol"
-#~ msgstr "Editar Rol"
-
-#~ msgid "Rols"
-#~ msgstr "Roles"
-
-#~ msgid "New Rol"
-#~ msgstr "Nuevo Rol"
-
-#~ msgid "Delete Rol"
-#~ msgstr "Eliminar Rol"
-
-#~ msgid "Password"
-#~ msgstr "Contraseña"
-
-#~ msgid "Add Type"
-#~ msgstr "Crear Tipo"
-
-#~ msgid "Edit Type"
-#~ msgstr "Editar Tipo"
-
 #~ msgid "Types"
 #~ msgstr "Tipos"
-
-#~ msgid "Delete Type"
-#~ msgstr "Eliminar Tipo"
-
-#~ msgid "Add User"
-#~ msgstr "Crear Usuario"
-
-#~ msgid "Edit User"
-#~ msgstr "Editar Usuario"
-
-#~ msgid "Users"
-#~ msgstr "Usuarios"
-
-#~ msgid "User"
-#~ msgstr "Usuario"
-
-#~ msgid "Delete User"
-#~ msgstr "Eliminar Usuario"
 
 #~ msgid "Delete Estate"
 #~ msgstr "Eliminar Socio"

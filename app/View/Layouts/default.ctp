@@ -63,6 +63,16 @@ $cakeVersion = __d('cake_dev', 'Biblioteca Vigil')
 							<li><?php echo $this->Html->link('Listar Cuotas', array('controller' => 'cuotas', 'action' => 'index')); ?></li>
 						</ul>
 					</li>
+					<!-- Recibos -->
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							Recibos<b class="caret"></b>
+						</a>
+						<ul class="dropdown-menu">
+							<li><?php echo $this->Html->link('Nuevo', array('controller' => 'recibos', 'action' => 'add')); ?></li>
+							<li><?php echo $this->Html->link('Listar Recibos', array('controller' => 'recibos', 'action' => 'index')); ?></li>
+						</ul>
+					</li>
 	    		</ul>
 				<ul class="nav navbar-nav navbar-right">
 	    			<li><a href="/logout"><span class="glyphicon glyphicon-user"></span> Salir</a></li>

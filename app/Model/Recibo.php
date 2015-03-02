@@ -8,6 +8,8 @@ App::uses('AppModel', 'Model');
  */
 class Recibo extends AppModel {
 
+	public $order = "Recibo.emision";
+
 /**
  * Validation rules
  *
