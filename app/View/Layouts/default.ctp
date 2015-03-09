@@ -98,8 +98,6 @@ $cakeVersion = __d('cake_dev', 'Biblioteca Vigil')
 		, '/bower_components/angular-resource/angular-resource.min.js'
 		, '/bower_components/angular-bootstrap/ui-bootstrap-tpls.min'
 		, '/bower_components/angular-ui-utils/keypress.min'
-		, 'models'
-		, 'angular/controllers'
 	));
 	echo $this->fetch('script');
 	?>
