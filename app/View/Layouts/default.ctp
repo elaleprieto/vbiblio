@@ -87,7 +87,7 @@ $cakeVersion = __d('cake_dev', 'Biblioteca Vigil')
 	</section>
 	
 	<footer class="navbar navbar-inverse navbar-fixed-bottom">
-		Sistema de Gestión Biblioteca Vigil
+		Sistema de Gestión de Socios Biblioteca Vigil
 	</footer>
 
 	<?php
