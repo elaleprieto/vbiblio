@@ -38,11 +38,8 @@ echo $this->Html->css('login', '', array('inline'=>FALSE));
 
 			<!-- Botones -->
 			<div class="form-group">
-				<div class="col-sm-6">
-					<button type="submit" class="btn btn-default col-sm-3 col-sm-offset-9">Ingresar</button>
-				</div>
-				<div class="col-sm-6">
-					<button type="reset" class="btn btn-default col-sm-3">Cancelar</button>
+				<div class="col-sm-12">
+					<button type="submit" class="btn btn-default col-sm-2 col-sm-offset-5">Entrar</button>
 				</div>
 			</div>
 		<?php echo $this->Form->end() ?>
