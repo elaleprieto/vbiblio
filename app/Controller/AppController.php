@@ -41,9 +41,13 @@ class AppController extends Controller {
 				'controller' => 'users',
 				'action' => 'login'
 			),
+			// 'loginRedirect' => array(
+			// 	'controller' => 'socios',
+			// 	'action' => 'index'
+			// ),
 			'loginRedirect' => array(
-				'controller' => 'socios',
-				'action' => 'index'
+				'controller' => 'page',
+				'action' => 'display'
 			),
 			'logoutRedirect' => array(
 				'admin' => FALSE,

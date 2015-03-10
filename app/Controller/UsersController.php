@@ -76,7 +76,8 @@ class UsersController extends AppController {
 				$user = $this->request->data['User'];
 
 				if ($this->Auth->login()) {
-					$this->redirect($this->Auth->redirect());
+					// $this->redirect($this->Auth->redirect());
+					debug($this->Auth->redirect());
 				}
 				$this->redirect('/');
 			}

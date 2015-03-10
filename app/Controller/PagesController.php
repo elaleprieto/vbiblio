@@ -30,6 +30,48 @@ App::uses('AppController', 'Controller');
  */
 class PagesController extends AppController {
 
+	/**************************************************************************************************************
+	* Authentication
+	**************************************************************************************************************/
+	public function beforeFilter() {
+		parent::beforeFilter();
+		// $this->Auth->allow('logout');
+	}
+
+	public function isAuthorized($user = null) {
+		$owner_allowed = array();
+		$user_allowed = array();
+		$admin_allowed = array_merge($owner_allowed, $user_allowed, array('display'));
+		$developer_allowed = array_merge($admin_allowed, array());
+
+		# All registered users can:
+		if (in_array($this->action, $user_allowed))
+			return true;
+
+		# Admin users can:
+		// if ($user['rol'] === 'admin')
+		if ($user['Rol']['weight'] >= User::ADMIN) 
+			if (in_array($this->action, $admin_allowed))
+				return true;
+
+		# Developer users can:
+		if ($user['Rol']['weight'] >= User::DEVELOPER)
+			if (in_array($this->action, $developer_allowed))
+				return true;
+
+		# The owner of an user can:
+		if (in_array($this->action, $owner_allowed)) {
+			$userId = $this->request->params['pass'][0];
+			if ($this->Event->isOwnedBy($userId, $user['id']))
+				return true;
+		}
+
+		return parent::isAuthorized($user);
+	}
+	/**************************************************************************************************************
+	* /authentication
+	**************************************************************************************************************/
+
 /**
  * This controller does not use a model
  *

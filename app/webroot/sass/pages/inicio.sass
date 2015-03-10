@@ -1,0 +1,39 @@
+@import colors
+
+html, body
+	height: 100%
+	margin: 0
+
+section, .full-window
+	height: 100%
+
+.full-window
+	display: table
+	width: 100%
+
+.full-inside
+	display: table-cell
+	vertical-align: middle
+
+.btn-xlg
+	font-size: 20px
+	font-size: 2.0rem
+	line-height: 10.33
+	margin-bottom: 20px
+	margin-bottom: 2rem
+	
+	&:hover, &:focus
+		background-position: 0px -3px
+
+.btn-full
+	width: 100%
+
+.btn-inverse
+	background-image: linear-gradient(to bottom, #3C3C3C 0px, #222 100%)
+	background-repeat: repeat-x
+	background-color: $gris-petroleo
+	border-color: #080808
+
+	&:hover, &:focus
+		background-color: darken($gris-petroleo, 20)
+		border-color: darken($gris-petroleo, 20)
