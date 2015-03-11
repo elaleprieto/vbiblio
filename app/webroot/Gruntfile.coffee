@@ -9,19 +9,8 @@ module.exports = (grunt) ->
           <%= grunt.template.today("yyyy-mm-dd") %> */\n'
       },
       build: {
-        src: ['js/app.js'
-          , 'js/controllers/*.js'
-          , 'js/directives.js'
-          , 'js/filters.js'
-          # , 'js/rutes.js'
+        src: ['js/angular/*.js'
           , 'js/models.js'
-          , 'js/services.js'
-          , 'js/styles.js'
-          , 'js/vendors/angular-resource.min1.1.5.js'
-          , 'js/vendors/bootstrap-datepicker.js'
-          , 'js/vendors/bootstrap-timepicker.js'
-          , 'js/vendors/jquery.cookie.js'
-          , 'js/vendors/keypress.js'
         ]
         dest: 'js/main.min.js'
       }
@@ -32,19 +21,8 @@ module.exports = (grunt) ->
             beautify: true
           }
         }
-        src: ['js/app.js'
-          , 'js/controllers/*.js'
-          , 'js/directives.js'
-          , 'js/filters.js'
-          # , 'js/rutes.js'
+        src: [ 'js/angular/*.js'
           , 'js/models.js'
-          , 'js/services.js'
-          , 'js/styles.js'
-          , 'js/vendors/angular-resource.min1.1.5.js'
-          , 'js/vendors/bootstrap-datepicker.js'
-          , 'js/vendors/bootstrap-timepicker.js'
-          , 'js/vendors/jquery.cookie.js'
-          , 'js/vendors/keypress.js'
         ]
         dest: 'js/main.js'
       }
@@ -86,14 +64,14 @@ module.exports = (grunt) ->
         files: ['sass/**/*.sass'],
         tasks: ['compass'],
       }
-      # js: {
-      #   files: ['coffeescript/**/*.coffee'],
-      #   tasks: ['coffee'],
-      # }
-      # ugly: {
-      #   files: ['js/**/*.js', '!js/main.min.js', '!js/main.js'],
-      #   tasks: ['uglify'],
-      # }
+      js: {
+        files: ['coffeescript/**/*.coffee'],
+        tasks: ['coffee'],
+      }
+      ugly: {
+        files: ['js/**/*.js', '!js/main.min.js', '!js/main.js'],
+        tasks: ['uglify'],
+      }
     }
   })
 

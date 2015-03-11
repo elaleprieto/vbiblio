@@ -37,7 +37,7 @@ $cakeVersion = __d('cake_dev', 'Biblioteca Vigil')
 		echo $this->fetch('css');
 	?>
 </head>
-<body>
+<body data-ng-app="App">
 	<header>
 		<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 			<div class="container-fluid">
@@ -94,10 +94,11 @@ $cakeVersion = __d('cake_dev', 'Biblioteca Vigil')
 	echo $this->Html->script(array('/bower_components/jquery/dist/jquery.min'
 		, '/bower_components/bootstrap/dist/js/bootstrap.min.js'
 		, '/bower_components/angular/angular.min.js'
-		, '/bower_components/angular-route/angular-route.min.js'
 		, '/bower_components/angular-resource/angular-resource.min.js'
-		, '/bower_components/angular-bootstrap/ui-bootstrap-tpls.min'
-		, '/bower_components/angular-ui-utils/keypress.min'
+		, 'main.min'
+		// , '/bower_components/angular-route/angular-route.min.js'
+		// , '/bower_components/angular-bootstrap/ui-bootstrap-tpls.min'
+		// , '/bower_components/angular-ui-utils/keypress.min'
 	));
 	echo $this->fetch('script');
 	?>

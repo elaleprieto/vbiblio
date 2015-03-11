@@ -35,3 +35,5 @@ Thumbs.db
 # Colectivo Libre specific #
 ############################
 wiki/*
+app/webroot/.sass-cache/*
+app/webroot/bower_components/*

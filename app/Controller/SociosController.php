@@ -20,7 +20,7 @@ class SociosController extends AppController {
 	public function isAuthorized($user = null) {
 		$owner_allowed = array();
 		$user_allowed = array();
-		$admin_allowed = array_merge($owner_allowed, $user_allowed, array('add', 'delete', 'edit', 'index', 'view'));
+		$admin_allowed = array_merge($owner_allowed, $user_allowed, array('add', 'delete', 'edit', 'index', 'search', 'view'));
 		$developer_allowed = array_merge($admin_allowed, array());
 
 		# All registered users can:
@@ -158,5 +158,22 @@ class SociosController extends AppController {
 			$this->Session->setFlash(__('The socio could not be deleted. Please, try again.'));
 		}
 		return $this->redirect(array('action' => 'index'));
+	}
+
+/**
+ * search method
+ *
+ * @throws NotFoundException
+ * @param string $barCode
+ * @return void
+ */
+	public function search() {
+		$this->layout = 'ajax';
+		$query = $this->request->query['query'];
+		$options['conditions'] = array('apellido LIKE' => "%$query%");
+		$options['fields'] = array('id', 'numero_entrada', 'apellido', 'nombre', 'docnumber');
+		$options['recursive'] = -1;
+		$socios = $this->Socio->find('all', $options);
+		$this->set(array('socios' => $socios, '_serialize' => array('socios')));
 	}
 }

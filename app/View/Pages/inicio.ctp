@@ -10,7 +10,11 @@
 				?>
 			</div>
 			<div class="col-sm-3 text-center">
-				<a href="#" class="btn btn-primary btn-full btn-inverse btn-xlg">Buscar Socio</a>
+				<!-- <a href="#" class="btn btn-primary btn-full btn-inverse btn-xlg">Buscar Socio</a> -->
+				<?php echo $this->Html->link('Buscar Socio'
+					, array('controller' => 'socios', 'action' => 'index')
+					, array('class' => "btn btn-primary btn-full btn-inverse btn-xlg"));
+				?>
 			</div>
 		</div>
 		<div class="row">
