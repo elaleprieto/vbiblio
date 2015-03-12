@@ -1,11 +1,9 @@
 /*! BibliotecaVigil          2015-03-11 */
 (function() {
     var a;
-    a = angular.module("App", [ "models" ]), a.config([ "$sceProvider", function(a) {
-        return a.enabled(!1), console.log(a);
-    } ]), a.controller("SociosController", [ "$http", "$location", "$scope", "$timeout", "$window", "$sce", "Socio", function(a, b, c, d, e, f, g) {
+    a = angular.module("App", [ "models" ]), a.controller("SociosController", [ "$http", "$location", "$scope", "$timeout", "$window", "$sce", "Socio", function(a, b, c, d, e, f, g) {
         var h, i;
-        return console.log(f.isEnabled()), c.search = function() {
+        return c.search = function() {
             return null != c.query ? g.search({
                 query: c.query
             }, function(a) {

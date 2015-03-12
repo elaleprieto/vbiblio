@@ -3,13 +3,6 @@
 
   App = angular.module('App', ['models']);
 
-  App.config([
-    '$sceProvider', function($sceProvider) {
-      $sceProvider.enabled(false);
-      return console.log($sceProvider);
-    }
-  ]);
-
   /* ***************************************************************************
         Definición de variables
   ***************************************************************************
@@ -25,7 +18,6 @@
   App.controller('SociosController', [
     '$http', '$location', '$scope', '$timeout', '$window', '$sce', 'Socio', function($http, $location, $scope, $timeout, $window, $sce, Socio) {
       var barcodeAux, lastBarcodeAux;
-      console.log($sce.isEnabled());
       $scope.search = function() {
         if ($scope.query != null) {
           return Socio.search({

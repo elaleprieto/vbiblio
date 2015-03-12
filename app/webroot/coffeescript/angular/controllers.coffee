@@ -1,11 +1,6 @@
 # App = angular.module('App', ['ngRoute', 'models', 'ui.bootstrap', 'ui.keypress'])
 App = angular.module('App', ['models'])
 
-App.config ['$sceProvider', ($sceProvider) ->
-    $sceProvider.enabled(false)
-    console.log $sceProvider
-]
-
 ### ***************************************************************************
       Definición de variables
 *************************************************************************** ###
@@ -17,8 +12,6 @@ App.config ['$sceProvider', ($sceProvider) ->
 App.controller 'SociosController'
   , ['$http', '$location', '$scope', '$timeout', '$window', '$sce', 'Socio'
     , ($http, $location, $scope, $timeout, $window, $sce, Socio) ->
-
-  console.log $sce.isEnabled()
 
   $scope.search = ->
     if $scope.query?
@@ -48,5 +41,4 @@ App.controller 'SociosController'
       $scope.searchByBarCode(barcodeAux.join('').substr(-13))
       barcodeAux = []
 
-    # console.log e.which + ":" + barcodeAux.join("|")
 ]
