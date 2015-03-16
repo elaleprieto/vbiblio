@@ -29,7 +29,7 @@ class SociosController extends AppController {
 
 		# Admin users can:
 		// if ($user['rol'] === 'admin')
-		if ($user['Rol']['weight'] >= User::ADMIN) 
+		if ($user['Rol']['weight'] >= User::ADMIN)
 			if (in_array($this->action, $admin_allowed))
 				return true;
 
@@ -91,8 +91,14 @@ class SociosController extends AppController {
  */
 	public function add() {
 		if ($this->request->is('post')) {
+			$socio = $this->request->data;
+			$socio['Socio']['ingreso'] = $this->_formatearFecha($socio['Socio']['ingreso']); # Se formatea la fecha para guardarla correctamente.
+			$socio['Socio']['egreso'] = $this->_formatearFecha($socio['Socio']['egreso']); # Se formatea la fecha para guardarla correctamente.
+			$socio['Socio']['nacimiento'] = $this->_formatearFecha($socio['Socio']['nacimiento']); # Se formatea la fecha para guardarla correctamente.
+
 			$this->Socio->create();
-			if ($this->Socio->save($this->request->data)) {
+			if ($this->Socio->save($socio)) {
+			// if ($this->Socio->save($this->request->data)) {
 				$this->Session->setFlash(__('The socio has been saved.'));
 				return $this->redirect(array('action' => 'index'));
 			} else {

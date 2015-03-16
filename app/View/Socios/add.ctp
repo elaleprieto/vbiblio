@@ -1,5 +1,5 @@
-<div class="socios form">
-<?php echo $this->Form->create('Socio', array('class'=>'form-horizontal', 'role'=>'form')); ?>
+<div data-ng-controller="SociosController">
+	<?php echo $this->Form->create('Socio', array('class'=>'form-horizontal', 'role'=>'form')); ?>
 	<fieldset>
 		<legend>Nuevo Socio</legend>
 		<?php
@@ -83,22 +83,50 @@
 								, 'after' => '</div>'
 							)
 						);
-		echo $this->Form->input('ingreso'
-							, array('class'=>'form-control'
-								, 'div'=>'form-group'
-								, 'label' => array('class' => 'col-sm-2 control-label')
-								, 'between' => '<div class="col-sm-8">'
-								, 'after' => '</div>'
-							)
-						);
-		echo $this->Form->input('egreso'
-							, array('class'=>'form-control'
-								, 'div'=>'form-group'
-								, 'label' => array('class' => 'col-sm-2 control-label')
-								, 'between' => '<div class="col-sm-8">'
-								, 'after' => '</div>'
-							)
-						);
+		?>
+		<!-- Ingreso -->
+		<div class="form-group">
+			<label for="SocioIngreso" class="col-sm-2 control-label">Ingreso</label>
+			<div class="col-sm-8">
+				<p class="input-group">
+					<input type="text" class="form-control" id="SocioIngreso" name="data[Socio][ingreso]"
+						datepicker-popup="dd-MM-yyyy" data-ng-model="ingreso" is-open="popup.ingreso" min-date="minDate" datepicker-options="dateOptions" data-ng-required="true" current-text="Hoy" clear-text="Limpiar" close-text="Cerrar" />
+					<span class="input-group-btn">
+						<button type="button" class="btn btn-default" ng-click="open($event, 'ingreso')"><i class="glyphicon glyphicon-calendar"></i></button>
+					</span>
+				</p>
+			</div>
+		</div>
+		<!-- Egreso -->
+		<div class="form-group">
+			<label for="SocioEgreso" class="col-sm-2 control-label">Egreso</label>
+			<div class="col-sm-8">
+				<p class="input-group">
+					<input type="text" class="form-control" id="SocioEgreso" name="data[Socio][egreso]"
+						datepicker-popup="dd-MM-yyyy" data-ng-model="egreso" is-open="popup.egreso" min-date="minDate" datepicker-options="dateOptions" data-ng-required="false" current-text="Hoy" clear-text="Limpiar" close-text="Cerrar" />
+					<span class="input-group-btn">
+						<button type="button" class="btn btn-default" ng-click="open($event, 'egreso')"><i class="glyphicon glyphicon-calendar"></i></button>
+					</span>
+				</p>
+			</div>
+		</div>
+		<?php
+		// echo $this->Form->input('ingreso'
+		// 					, array('class'=>'form-control'
+		// 						, 'div'=>'form-group'
+		// 						, 'label' => array('class' => 'col-sm-2 control-label')
+		// 						, 'between' => '<div class="col-sm-8">'
+		// 						, 'after' => '</div>'
+		// 					)
+		// 				);
+		// echo $this->Form->input('egreso'
+		// 					, array('class'=>'form-control'
+		// 						, 'div'=>'form-group'
+		// 						, 'label' => array('class' => 'col-sm-2 control-label')
+		// 						, 'between' => '<div class="col-sm-8">'
+		// 						, 'after' => '</div>'
+		// 					)
+		// 				);
 		echo $this->Form->input('causa'
 							, array('class'=>'form-control'
 								, 'div'=>'form-group'
@@ -139,14 +167,29 @@
 								, 'after' => '</div>'
 							)
 						);
-		echo $this->Form->input('nacimiento'
-							, array('class'=>'form-control'
-								, 'div'=>'form-group'
-								, 'label' => array('class' => 'col-sm-2 control-label')
-								, 'between' => '<div class="col-sm-8">'
-								, 'after' => '</div>'
-							)
-						);
+		?>
+		<!-- Nacimiento -->
+		<div class="form-group">
+			<label for="SocioNacimiento" class="col-sm-2 control-label">Nacimiento</label>
+			<div class="col-sm-8">
+				<p class="input-group">
+					<input type="text" class="form-control" id="SocioNacimiento" name="data[Socio][nacimiento]"
+						datepicker-popup="dd-MM-yyyy" data-ng-model="nacimiento" is-open="popup.nacimiento" min-date="minDate" datepicker-options="dateOptions" data-ng-required="true" current-text="Hoy" clear-text="Limpiar" close-text="Cerrar" />
+					<span class="input-group-btn">
+						<button type="button" class="btn btn-default" ng-click="open($event, 'nacimiento')"><i class="glyphicon glyphicon-calendar"></i></button>
+					</span>
+				</p>
+			</div>
+		</div>
+		<?php
+		// echo $this->Form->input('nacimiento'
+		// 					, array('class'=>'form-control'
+		// 						, 'div'=>'form-group'
+		// 						, 'label' => array('class' => 'col-sm-2 control-label')
+		// 						, 'between' => '<div class="col-sm-8">'
+		// 						, 'after' => '</div>'
+		// 					)
+		// 				);
 		echo $this->Form->input('email'
 							, array('class'=>'form-control'
 								, 'div'=>'form-group'
