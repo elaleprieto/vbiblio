@@ -1,7 +1,7 @@
 (function() {
   var App;
 
-  App = angular.module('App', ['models']);
+  App = angular.module('App', ['models', 'ui.bootstrap']);
 
   /* ***************************************************************************
         Definición de variables
@@ -32,6 +32,30 @@
         $scope.sociosBuscados = null;
         $('#' + input).focus();
         return this;
+      };
+      $scope.clear = function() {
+        return $scope.dt = null;
+      };
+      $scope.disabled = function(date, mode) {};
+      $scope.toggleMin = function() {
+        var _ref;
+        return $scope.minDate = (_ref = $scope.minDate) != null ? _ref : {
+          "null": new Date()
+        };
+      };
+      $scope.toggleMin();
+      $scope.open = function($event, element) {
+        $event.preventDefault();
+        $event.stopPropagation();
+        angular.forEach($scope.popup, function(p, index) {
+          return $scope.popup[index] = false;
+        });
+        return $scope.popup[element] = true;
+      };
+      $scope.popup = {};
+      $scope.dateOptions = {
+        formatYear: 'yy',
+        startingDay: 1
       };
       barcodeAux = [];
       lastBarcodeAux = Date.now();

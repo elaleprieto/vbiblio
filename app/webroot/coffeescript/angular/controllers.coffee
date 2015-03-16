@@ -1,5 +1,5 @@
 # App = angular.module('App', ['ngRoute', 'models', 'ui.bootstrap', 'ui.keypress'])
-App = angular.module('App', ['models'])
+App = angular.module('App', ['models', 'ui.bootstrap'])
 
 ### ***************************************************************************
       Definición de variables
@@ -24,6 +24,39 @@ App.controller 'SociosController'
     $scope.sociosBuscados = null
     $('#'+input).focus()
     @
+
+  # $scope.today = ->
+  #   $scope.dt = new Date()
+  
+  # $scope.today()
+
+  $scope.clear =  ->
+    $scope.dt = null
+  
+
+  # Disable weekend selection
+  $scope.disabled = (date, mode) ->
+    # ( mode is 'day' and ( date.getDay() is 0 || date.getDay() is 6 ) )
+  
+
+  $scope.toggleMin = ->
+    $scope.minDate = $scope.minDate ? null : new Date()
+  
+  $scope.toggleMin()
+
+  $scope.open = ($event, element) ->
+    $event.preventDefault()
+    $event.stopPropagation()
+    angular.forEach $scope.popup, (p, index) ->   # Se ocultan todos los popups
+      $scope.popup[index] = false
+
+    $scope.popup[element] = true    # Se habilita la visualización del elemento pasado como parámetro.
+
+  $scope.popup = {}
+  $scope.dateOptions = 
+    formatYear: 'yy',
+    startingDay: 1
+  
 
   barcodeAux = []
   lastBarcodeAux = Date.now()

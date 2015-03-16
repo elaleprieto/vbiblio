@@ -120,7 +120,12 @@ class SociosController extends AppController {
 			throw new NotFoundException(__('Invalid socio'));
 		}
 		if ($this->request->is(array('post', 'put'))) {
-			if ($this->Socio->save($this->request->data)) {
+			$socio = $this->request->data;
+			$socio['Socio']['ingreso'] = $this->_formatearFecha($socio['Socio']['ingreso']); # Se formatea la fecha para guardarla correctamente.
+			$socio['Socio']['egreso'] = $this->_formatearFecha($socio['Socio']['egreso']); # Se formatea la fecha para guardarla correctamente.
+			$socio['Socio']['nacimiento'] = $this->_formatearFecha($socio['Socio']['nacimiento']); # Se formatea la fecha para guardarla correctamente.
+
+			if ($this->Socio->save($socio)) {
 				$this->Session->setFlash(__('The socio has been saved.'));
 				return $this->redirect(array('action' => 'index'));
 			} else {
@@ -175,5 +180,12 @@ class SociosController extends AppController {
 		$options['recursive'] = -1;
 		$socios = $this->Socio->find('all', $options);
 		$this->set(array('socios' => $socios, '_serialize' => array('socios')));
+	}
+
+	public function _formatearFecha($fecha='') {
+		if ($fecha != '') {
+			return date("Y-m-d", strtotime($fecha)); # Se formatea la fecha para guardarla correctamente.
+		}
+		else return "0000-00-00";
 	}
 }
