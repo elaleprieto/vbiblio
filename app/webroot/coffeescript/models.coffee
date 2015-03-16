@@ -1,13 +1,21 @@
 angular.module('models', ['ngResource'])
-	
-	# Producto
+
+	# Socio
 	.factory('Socio', ['$resource', ($resource) ->
 		$resource '/socios.json'
 			, { callback:'JSON_CALLBACK' }
 			, search: {isArray: true, method: 'GET', url: '/socios/search.json'}
 				, vender: {method: 'POST', url: '/productos/vender.json'} # USAR
-	])	
-	
+	])
+
+	# Cuota
+	.factory('Cuota', ['$resource', ($resource) ->
+		$resource '/cuotas.json'
+			, { callback:'JSON_CALLBACK' }
+			, search: {isArray: true, method: 'GET', url: '/cuotas/search.json'}
+				, vender: {method: 'POST', url: '/productos/vender.json'} # USAR
+	])
+
 	# # Movimiento
 	# .factory('Movimiento', ['$resource', ($resource) ->
 	# 	$resource '/movimientos.json'

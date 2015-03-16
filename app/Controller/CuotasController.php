@@ -28,7 +28,7 @@ class CuotasController extends AppController {
 
 		# Admin users can:
 		// if ($user['rol'] === 'admin')
-		if ($user['Rol']['weight'] >= User::ADMIN) 
+		if ($user['Rol']['weight'] >= User::ADMIN)
 			if (in_array($this->action, $admin_allowed))
 				return true;
 
@@ -90,8 +90,11 @@ class CuotasController extends AppController {
  */
 	public function add() {
 		if ($this->request->is('post')) {
+			$cuota = $this->request->data;
+			$cuota['Cuota']['vencimiento'] = $this->_formatearFecha($cuota['Cuota']['vencimiento']); # Se formatea la fecha para guardarla correctamente.
+
 			$this->Cuota->create();
-			if ($this->Cuota->save($this->request->data)) {
+			if ($this->Cuota->save($cuota)) {
 				$this->Session->setFlash(__('The cuota has been saved.'));
 				return $this->redirect(array('action' => 'index'));
 			} else {
@@ -114,7 +117,10 @@ class CuotasController extends AppController {
 			throw new NotFoundException(__('Invalid cuota'));
 		}
 		if ($this->request->is(array('post', 'put'))) {
-			if ($this->Cuota->save($this->request->data)) {
+			$cuota = $this->request->data;
+			$cuota['Cuota']['vencimiento'] = $this->_formatearFecha($cuota['Cuota']['vencimiento']); # Se formatea la fecha para guardarla correctamente.
+
+			if ($this->Cuota->save($cuota)) {
 				$this->Session->setFlash(__('The cuota has been saved.'));
 				return $this->redirect(array('action' => 'index'));
 			} else {
@@ -147,5 +153,12 @@ class CuotasController extends AppController {
 			$this->Session->setFlash(__('The cuota could not be deleted. Please, try again.'));
 		}
 		return $this->redirect(array('action' => 'index'));
+	}
+
+	public function _formatearFecha($fecha='') {
+		if ($fecha != '') {
+			return date("Y-m-d", strtotime($fecha)); # Se formatea la fecha para guardarla correctamente.
+		}
+		else return "0000-00-00";
 	}
 }
