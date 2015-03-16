@@ -111,22 +111,6 @@
 			</div>
 		</div>
 		<?php
-		// echo $this->Form->input('ingreso'
-		// 					, array('class'=>'form-control'
-		// 						, 'div'=>'form-group'
-		// 						, 'label' => array('class' => 'col-sm-2 control-label')
-		// 						, 'between' => '<div class="col-sm-8">'
-		// 						, 'after' => '</div>'
-		// 					)
-		// 				);
-		// echo $this->Form->input('egreso'
-		// 					, array('class'=>'form-control'
-		// 						, 'div'=>'form-group'
-		// 						, 'label' => array('class' => 'col-sm-2 control-label')
-		// 						, 'between' => '<div class="col-sm-8">'
-		// 						, 'after' => '</div>'
-		// 					)
-		// 				);
 		echo $this->Form->input('causa'
 							, array('class'=>'form-control'
 								, 'div'=>'form-group'
@@ -182,14 +166,6 @@
 			</div>
 		</div>
 		<?php
-		// echo $this->Form->input('nacimiento'
-		// 					, array('class'=>'form-control'
-		// 						, 'div'=>'form-group'
-		// 						, 'label' => array('class' => 'col-sm-2 control-label')
-		// 						, 'between' => '<div class="col-sm-8">'
-		// 						, 'after' => '</div>'
-		// 					)
-		// 				);
 		echo $this->Form->input('email'
 							, array('class'=>'form-control'
 								, 'div'=>'form-group'

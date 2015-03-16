@@ -98,7 +98,6 @@ class SociosController extends AppController {
 
 			$this->Socio->create();
 			if ($this->Socio->save($socio)) {
-			// if ($this->Socio->save($this->request->data)) {
 				$this->Session->setFlash(__('The socio has been saved.'));
 				return $this->redirect(array('action' => 'index'));
 			} else {
