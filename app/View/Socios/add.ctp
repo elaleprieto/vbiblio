@@ -4,85 +4,85 @@
 		<legend>Nuevo Socio</legend>
 		<?php
 		echo $this->Form->input('numero_entrada'
-							, array('class'=>'form-control'
-								, 'div'=>'form-group'
-								, 'label' => array('class' => 'col-sm-2 control-label')
-								, 'between' => '<div class="col-sm-8">'
-								, 'after' => '</div>'
-							)
-						);
+			, array('class'=>'form-control'
+				, 'div'=>'form-group'
+				, 'label' => array('class' => 'col-sm-2 control-label')
+				, 'between' => '<div class="col-sm-8">'
+				, 'after' => '</div>'
+			)
+		);
 		echo $this->Form->input('apellido'
-							, array('class'=>'form-control'
-								, 'div'=>'form-group'
-								, 'label' => array('class' => 'col-sm-2 control-label')
-								, 'between' => '<div class="col-sm-8">'
-								, 'after' => '</div>'
-							)
-						);
+			, array('class'=>'form-control'
+				, 'div'=>'form-group'
+				, 'label' => array('class' => 'col-sm-2 control-label')
+				, 'between' => '<div class="col-sm-8">'
+				, 'after' => '</div>'
+			)
+		);
 		echo $this->Form->input('nombre'
-							, array('class'=>'form-control'
-								, 'div'=>'form-group'
-								, 'label' => array('class' => 'col-sm-2 control-label')
-								, 'between' => '<div class="col-sm-8">'
-								, 'after' => '</div>'
-							)
-						);
+			, array('class'=>'form-control'
+				, 'div'=>'form-group'
+				, 'label' => array('class' => 'col-sm-2 control-label')
+				, 'between' => '<div class="col-sm-8">'
+				, 'after' => '</div>'
+			)
+		);
 		echo $this->Form->input('denominacion'
-							, array('class'=>'form-control'
-								, 'div'=>'form-group'
-								, 'label' => array('class' => 'col-sm-2 control-label')
-								, 'between' => '<div class="col-sm-8">'
-								, 'after' => '</div>'
-							)
-						);
+			, array('class'=>'form-control'
+				, 'div'=>'form-group'
+				, 'label' => array('class' => 'col-sm-2 control-label')
+				, 'between' => '<div class="col-sm-8">'
+				, 'after' => '</div>'
+			)
+		);
 		echo $this->Form->input('docnumber'
-							, array('class'=>'form-control'
-								, 'div'=>'form-group'
-								, 'label' => array('class' => 'col-sm-2 control-label', 'text'=>'DNI')
-								, 'between' => '<div class="col-sm-8">'
-								, 'after' => '</div>'
-							)
-						);
+			, array('class'=>'form-control'
+				, 'div'=>'form-group'
+				, 'label' => array('class' => 'col-sm-2 control-label', 'text'=>'DNI')
+				, 'between' => '<div class="col-sm-8">'
+				, 'after' => '</div>'
+			)
+		);
 		echo $this->Form->input('cuit'
-							, array('class'=>'form-control'
-								, 'div'=>'form-group'
-								, 'label' => array('class' => 'col-sm-2 control-label')
-								, 'between' => '<div class="col-sm-8">'
-								, 'after' => '</div>'
-							)
-						);
+			, array('class'=>'form-control'
+				, 'div'=>'form-group'
+				, 'label' => array('class' => 'col-sm-2 control-label')
+				, 'between' => '<div class="col-sm-8">'
+				, 'after' => '</div>'
+			)
+		);
 		echo $this->Form->input('calle'
-							, array('class'=>'form-control'
-								, 'div'=>'form-group'
-								, 'label' => array('class' => 'col-sm-2 control-label')
-								, 'between' => '<div class="col-sm-8">'
-								, 'after' => '</div>'
-							)
-						);
+			, array('class'=>'form-control'
+				, 'div'=>'form-group'
+				, 'label' => array('class' => 'col-sm-2 control-label')
+				, 'between' => '<div class="col-sm-8">'
+				, 'after' => '</div>'
+			)
+		);
 		echo $this->Form->input('numero'
-							, array('class'=>'form-control'
-								, 'div'=>'form-group'
-								, 'label' => array('class' => 'col-sm-2 control-label')
-								, 'between' => '<div class="col-sm-8">'
-								, 'after' => '</div>'
-							)
-						);
+			, array('class'=>'form-control'
+				, 'div'=>'form-group'
+				, 'label' => array('class' => 'col-sm-2 control-label')
+				, 'between' => '<div class="col-sm-8">'
+				, 'after' => '</div>'
+			)
+		);
 		echo $this->Form->input('piso'
-							, array('class'=>'form-control'
-								, 'div'=>'form-group'
-								, 'label' => array('class' => 'col-sm-2 control-label')
-								, 'between' => '<div class="col-sm-8">'
-								, 'after' => '</div>'
-							)
-						);
+			, array('class'=>'form-control'
+				, 'div'=>'form-group'
+				, 'label' => array('class' => 'col-sm-2 control-label')
+				, 'between' => '<div class="col-sm-8">'
+				, 'after' => '</div>'
+			)
+		);
 		echo $this->Form->input('localidad_id'
-							, array('class'=>'form-control'
-								, 'div'=>'form-group'
-								, 'label' => array('class' => 'col-sm-2 control-label')
-								, 'between' => '<div class="col-sm-8">'
-								, 'after' => '</div>'
-							)
-						);
+			, array('class'=>'form-control'
+				, 'div'=>'form-group'
+				, 'label' => array('class' => 'col-sm-2 control-label')
+				, 'between' => '<div class="col-sm-8">'
+				, 'after' => '</div>'
+			)
+		);
 		?>
 		<!-- Ingreso -->
 		<div class="form-group">

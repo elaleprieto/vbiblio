@@ -3,22 +3,14 @@
 		<fieldset>
 			<legend>Nueva Cuota</legend>
 			<?php
-				echo $this->Form->input('importe'
-							, array('class'=>'form-control'
-								, 'div'=>'form-group'
-								, 'label' => array('class' => 'col-sm-2 control-label')
-								, 'between' => '<div class="col-sm-8">'
-								, 'after' => '</div>'
-							)
-						);
-				echo $this->Form->input('observaciones'
-							, array('class'=>'form-control'
-								, 'div'=>'form-group'
-								, 'label' => array('class' => 'col-sm-2 control-label')
-								, 'between' => '<div class="col-sm-8">'
-								, 'after' => '</div>'
-							)
-						);
+				echo $this->Form->input('socio_id'
+					, array('class'=>'form-control'
+						, 'div'=>'form-group'
+						, 'label' => array('class' => 'col-sm-2 control-label')
+						, 'between' => '<div class="col-sm-8">'
+						, 'after' => '</div>'
+					)
+				);
 				?>
 				<!-- Vencimiento -->
 				<div class="form-group">
@@ -34,22 +26,38 @@
 					</div>
 				</div>
 				<?php
+				echo $this->Form->input('importe'
+					, array('class'=>'form-control'
+						, 'div'=>'form-group'
+						, 'label' => array('class' => 'col-sm-2 control-label')
+						, 'between' => '<div class="col-sm-8">'
+						, 'after' => '</div>'
+					)
+				);
+				echo $this->Form->input('observaciones'
+					, array('class'=>'form-control'
+						, 'div'=>'form-group'
+						, 'label' => array('class' => 'col-sm-2 control-label')
+						, 'between' => '<div class="col-sm-8">'
+						, 'after' => '</div>'
+					)
+				);
 				echo $this->Form->input('pagada'
-							, array('class'=>'form-control'
-								, 'div'=>'form-group'
-								, 'label' => array('class' => 'col-sm-2 control-label')
-								, 'between' => '<div class="col-sm-8">'
-								, 'after' => '</div>'
-							)
-						);
+					, array('class'=>'form-control'
+						, 'div'=>'form-group'
+						, 'label' => array('class' => 'col-sm-2 control-label')
+						, 'between' => '<div class="col-sm-8">'
+						, 'after' => '</div>'
+					)
+				);
 				echo $this->Form->input('emitido'
-							, array('class'=>'form-control'
-								, 'div'=>'form-group'
-								, 'label' => array('class' => 'col-sm-2 control-label')
-								, 'between' => '<div class="col-sm-8">'
-								, 'after' => '</div>'
-							)
-						);
+					, array('class'=>'form-control'
+						, 'div'=>'form-group'
+						, 'label' => array('class' => 'col-sm-2 control-label')
+						, 'between' => '<div class="col-sm-8">'
+						, 'after' => '</div>'
+					)
+				);
 				// echo $this->Form->input('recibo_id'
 				// 			, array('class'=>'form-control'
 				// 				, 'div'=>'form-group'
@@ -58,14 +66,7 @@
 				// 				, 'after' => '</div>'
 				// 			)
 				// 		);
-				echo $this->Form->input('socio_id'
-							, array('class'=>'form-control'
-								, 'div'=>'form-group'
-								, 'label' => array('class' => 'col-sm-2 control-label')
-								, 'between' => '<div class="col-sm-8">'
-								, 'after' => '</div>'
-							)
-						);
+				
 			?>
 		</fieldset>
 	<?php echo $this->Form->end(__('Submit')); ?>
