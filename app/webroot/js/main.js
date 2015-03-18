@@ -1,9 +1,15 @@
-/*! BibliotecaVigil          2015-03-16 */
+/*! BibliotecaVigil          2015-03-17 */
 (function() {
     var a;
-    a = angular.module("App", [ "models", "ui.bootstrap" ]), a.controller("SociosController", [ "$http", "$location", "$scope", "$timeout", "$window", "$sce", "Socio", function(a, b, c, d, e, f, g) {
+    a = angular.module("App", [ "models", "ui.bootstrap" ]), a.controller("SociosController", [ "$http", "$location", "$scope", "$timeout", "$window", "Provincia", "Socio", function(a, b, c, d, e, f, g) {
         var h, i;
-        return c.search = function() {
+        return c.provinciaChanged = function() {
+            return console.log(c.provinciaSelected.Provincia.id), f.getLocalidades({
+                id: c.provinciaSelected.Provincia.id
+            }, function(a) {
+                return c.localidades = a.localidades;
+            });
+        }, c.search = function() {
             return null != c.query ? g.search({
                 query: c.query
             }, function(a) {
@@ -77,6 +83,21 @@
                 isArray: !0,
                 method: "GET",
                 url: "/cuotas/search.json"
+            },
+            vender: {
+                method: "POST",
+                url: "/productos/vender.json"
+            }
+        });
+    } ]).factory("Provincia", [ "$resource", function(a) {
+        return a("/provincias.json", {
+            callback: "JSON_CALLBACK"
+        }, {
+            getLocalidades: {
+                isArray: !1,
+                cache: !0,
+                method: "GET",
+                url: "/provincias/getLocalidades.json"
             },
             vender: {
                 method: "POST",

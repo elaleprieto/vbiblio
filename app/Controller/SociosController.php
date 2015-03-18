@@ -92,11 +92,13 @@ class SociosController extends AppController {
 	public function add() {
 		if ($this->request->is('post')) {
 			$socio = $this->request->data;
+			// debug($socio);
+			// return;
 			$socio['Socio']['ingreso'] = $this->_formatearFecha($socio['Socio']['ingreso']); # Se formatea la fecha para guardarla correctamente.
 			$socio['Socio']['egreso'] = $this->_formatearFecha($socio['Socio']['egreso']); # Se formatea la fecha para guardarla correctamente.
 			$socio['Socio']['nacimiento'] = $this->_formatearFecha($socio['Socio']['nacimiento']); # Se formatea la fecha para guardarla correctamente.
 
-			$this->Socio->create();
+			$this->Socio->create($socio);
 			if ($this->Socio->save($socio)) {
 				$this->Session->setFlash(__('The socio has been saved.'));
 				return $this->redirect(array('action' => 'index'));
@@ -104,13 +106,15 @@ class SociosController extends AppController {
 				$this->Session->setFlash(__('The socio could not be saved. Please, try again.'));
 			}
 		}
-		$localidades = $this->Socio->Localidad->find('list');
+		// $localidades = $this->Socio->Localidad->find('list');
+		$provincias = $this->Socio->Localidad->Provincia->find('all', array('order'=>'name ASC', 'recursive'=>-1));
 		$categorias = $this->Socio->Categoria->find('list');
 		$cobradores = $this->Socio->Cobrador->find('list');
 		$tipocambios = $this->Socio->Tipocambio->find('list');
 		$tipos = $this->Socio->Tipo->find('list');
 		$tipodocs = $this->Socio->Tipodoc->find('list');
-		$this->set(compact('localidades', 'categorias', 'cobradores', 'tipocambios', 'tipos', 'tipodocs'));
+
+		$this->set(compact('localidades', 'provincias', 'categorias', 'cobradores', 'tipocambios', 'tipos', 'tipodocs'));
 	}
 
 /**

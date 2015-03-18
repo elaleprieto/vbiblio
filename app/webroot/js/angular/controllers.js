@@ -16,8 +16,16 @@
 
 
   App.controller('SociosController', [
-    '$http', '$location', '$scope', '$timeout', '$window', '$sce', 'Socio', function($http, $location, $scope, $timeout, $window, $sce, Socio) {
+    '$http', '$location', '$scope', '$timeout', '$window', 'Provincia', 'Socio', function($http, $location, $scope, $timeout, $window, Provincia, Socio) {
       var barcodeAux, lastBarcodeAux;
+      $scope.provinciaChanged = function() {
+        console.log($scope.provinciaSelected.Provincia.id);
+        return Provincia.getLocalidades({
+          id: $scope.provinciaSelected.Provincia.id
+        }, function(data) {
+          return $scope.localidades = data.localidades;
+        });
+      };
       $scope.search = function() {
         if ($scope.query != null) {
           return Socio.search({

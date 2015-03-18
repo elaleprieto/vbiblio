@@ -7,7 +7,8 @@ App::uses('AppModel', 'Model');
  * @property Socio $Socio
  */
 class Localidad extends AppModel {
-
+	public $order = 'name ASC';
+	
 /**
  * Validation rules
  *

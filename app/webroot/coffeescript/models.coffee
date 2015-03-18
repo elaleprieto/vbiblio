@@ -16,6 +16,14 @@ angular.module('models', ['ngResource'])
 				, vender: {method: 'POST', url: '/productos/vender.json'} # USAR
 	])
 
+	# Provincia
+	.factory('Provincia', ['$resource', ($resource) ->
+		$resource '/provincias.json'
+			, { callback:'JSON_CALLBACK' }
+			, getLocalidades: {isArray: false, cache: true, method: 'GET', url: '/provincias/getLocalidades.json'}
+				, vender: {method: 'POST', url: '/productos/vender.json'} # USAR
+	])
+
 	# # Movimiento
 	# .factory('Movimiento', ['$resource', ($resource) ->
 	# 	$resource '/movimientos.json'

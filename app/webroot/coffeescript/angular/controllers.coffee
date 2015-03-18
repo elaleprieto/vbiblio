@@ -10,8 +10,14 @@ App = angular.module('App', ['models', 'ui.bootstrap'])
       Productos
 *************************************************************************** ###
 App.controller 'SociosController'
-  , ['$http', '$location', '$scope', '$timeout', '$window', '$sce', 'Socio'
-    , ($http, $location, $scope, $timeout, $window, $sce, Socio) ->
+  , ['$http', '$location', '$scope', '$timeout', '$window', 'Provincia','Socio'
+    , ($http, $location, $scope, $timeout, $window, Provincia, Socio) ->
+
+  $scope.provinciaChanged = ->
+    console.log $scope.provinciaSelected.Provincia.id
+    Provincia.getLocalidades {id: $scope.provinciaSelected.Provincia.id}
+      , (data) ->
+        $scope.localidades = data.localidades
 
   $scope.search = ->
     if $scope.query?

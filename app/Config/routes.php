@@ -20,9 +20,16 @@
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
 
-	Router::mapResources('cuotas');
-	Router::mapResources('socios');
+
+	Router::mapResources(array('cuotas', 'provincias', 'socios'));
 	Router::parseExtensions('json');
+
+	// Router::mapResources('provincias', array(
+	//     'connectOptions' => array(
+	//         // 'routeClass' => 'ApiRoute',
+	// 				'action' => 'getLocalidades', 'method' => 'GET', 'id' => false
+	//     )
+	// ));
 
 /**
  * Here, we are connecting '/' (base path) to controller called 'Pages',

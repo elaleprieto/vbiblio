@@ -31,6 +31,23 @@
         }
       });
     }
+  ]).factory('Provincia', [
+    '$resource', function($resource) {
+      return $resource('/provincias.json', {
+        callback: 'JSON_CALLBACK'
+      }, {
+        getLocalidades: {
+          isArray: false,
+          cache: true,
+          method: 'GET',
+          url: '/provincias/getLocalidades.json'
+        },
+        vender: {
+          method: 'POST',
+          url: '/productos/vender.json'
+        }
+      });
+    }
   ]);
 
 }).call(this);

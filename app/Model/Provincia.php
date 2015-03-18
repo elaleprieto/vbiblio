@@ -6,6 +6,7 @@ App::uses('AppModel', 'Model');
  * @property Localidad $Localidad
  */
 class Provincia extends AppModel {
+	public $order = 'name ASC';
 
 /**
  * Validation rules

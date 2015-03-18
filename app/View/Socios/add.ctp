@@ -75,14 +75,45 @@
 				, 'after' => '</div>'
 			)
 		);
-		echo $this->Form->input('localidad_id'
-			, array('class'=>'form-control'
-				, 'div'=>'form-group'
-				, 'label' => array('class' => 'col-sm-2 control-label')
-				, 'between' => '<div class="col-sm-8">'
-				, 'after' => '</div>'
-			)
-		);
+		?>
+		<!-- Provincia -->
+		<div class="form-group">
+			<label for="Provincia" class="col-sm-2 control-label">Provincia</label>
+			<div class="col-sm-8">
+				<select class="form-control" data-ng-model="provinciaSelected"
+					data-ng-options="provincia.Provincia.name for provincia in provincias"
+					data-ng-change="provinciaChanged()"
+					data-ng-init='provincias=<?php echo json_encode($provincias, JSON_HEX_TAG | JSON_HEX_APOS | JSON_HEX_QUOT | JSON_HEX_AMP); ?>'>
+				</select>
+			</div>
+		</div>
+		<!-- Localidad -->
+		<div class="form-group">
+			<label for="Localidad" class="col-sm-2 control-label">Localidad</label>
+			<div class="col-sm-8">
+				<select name="data[Socio][localidad_id]" class="form-control" data-ng-model="localidadSelected"
+					data-ng-options="localidad.Localidad.name for localidad in localidades track by localidad.Localidad.id"
+						>
+				</select>
+			</div>
+		</div>
+		<?php
+		// echo $this->Form->input('provincia_id'
+		// 	, array('class'=>'form-control'
+		// 		, 'div'=>'form-group'
+		// 		, 'label' => array('class' => 'col-sm-2 control-label')
+		// 		, 'between' => '<div class="col-sm-8">'
+		// 		, 'after' => '</div>'
+		// 	)
+		// );
+		// echo $this->Form->input('localidad_id'
+		// 	, array('class'=>'form-control'
+		// 		, 'div'=>'form-group'
+		// 		, 'label' => array('class' => 'col-sm-2 control-label')
+		// 		, 'between' => '<div class="col-sm-8">'
+		// 		, 'after' => '</div>'
+		// 	)
+		// );
 		?>
 		<!-- Ingreso -->
 		<div class="form-group">
