@@ -15,8 +15,8 @@ App::uses('AppModel', 'Model');
 class Socio extends AppModel {
 	public $displayField = 'name';
 	public $order = "name";
-	public $virtualFields = array(
-		'name' => "CONCAT(UPPER(Socio.apellido), ', ', Socio.nombre)"
+	public $virtualFields = array('name' => "CONCAT(UPPER(Socio.apellido), ', ', Socio.nombre)"
+		, 'localidad_name' => 'SELECT Localidad.name FROM localidades AS Localidad WHERE Localidad.id = Socio.localidad_id'
 	);
 
 /**

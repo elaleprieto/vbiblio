@@ -79,7 +79,34 @@ class CobradoresController extends AppController {
 		if (!$this->Cobrador->exists($id)) {
 			throw new NotFoundException(__('Invalid cobrador'));
 		}
-		$options = array('conditions' => array('Cobrador.' . $this->Cobrador->primaryKey => $id));
+		$this->Cobrador->Behaviors->load('Containable');
+		$this->Cobrador->recursive = -1;
+
+		$options['conditions'] = array('Cobrador.' . $this->Cobrador->primaryKey => $id);
+		$options['contain'] = array('Socio' => array('fields'=>array('id'
+			, 'numero_entrada'
+			, 'apellido'
+			, 'nombre'
+			, 'docnumber'
+			, 'cuit'
+			, 'calle'
+			, 'numero'
+			, 'piso'
+			, 'localidad_name'
+			, 'email'
+			, 'telefono'
+			, 'celular'
+			, 'cobranza_domicilio'
+			, 'cobranza_localidad'
+			, 'cobranza_no_print_rbo'
+			, 'cobranza_zona'
+			, 'cobranza_recorrido'
+			, 'carnet_pago'
+			, 'carnet_pedido'
+			, 'categoria_id'
+			, 'cobrador_id'
+			)
+		));
 		$this->set('cobrador', $this->Cobrador->find('first', $options));
 	}
 
