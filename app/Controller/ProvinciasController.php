@@ -67,11 +67,7 @@ class ProvinciasController extends AppController {
 			$options['fields'] = array('id', 'name');
 			$options['conditions'] = array('provincia_id'=>$id);
 			$localidades = $this->Provincia->Localidad->find('all', $options);
-			$this->set(array(
-          'localidades' => $localidades,
-          '_serialize' => array('localidades')
-      ));
-
+			$this->set(array('localidades' => $localidades, '_serialize' => array('localidades')));
 		}
 	}
 
