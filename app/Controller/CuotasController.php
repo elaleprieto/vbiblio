@@ -19,7 +19,7 @@ class CuotasController extends AppController {
 	public function isAuthorized($user = null) {
 		$owner_allowed = array();
 		$user_allowed = array();
-		$admin_allowed = array_merge($owner_allowed, $user_allowed, array('add', 'edit', 'index', 'delete', 'view'));
+		$admin_allowed = array_merge($owner_allowed, $user_allowed, array('add', 'edit', 'generarTodasHasta', 'index', 'delete', 'view'));
 		$developer_allowed = array_merge($admin_allowed, array());
 
 		# All registered users can:
@@ -103,6 +103,61 @@ class CuotasController extends AppController {
 		}
 		$socios = $this->Cuota->Socio->find('list');
 		$this->set(compact('socios'));
+	}
+
+/**
+ * generarTodasHasta method
+ * Genera las cuotas desde el mes actual hasta el mes "fechaFinal" de todos los socios.
+ *
+ * @return void
+ */
+	public function generarTodasHasta($diaVencimiento = 10) {
+		if ($this->request->is('post')) {
+			$cuota = $this->request->data;
+			debug($cuota, $showHtml = null, $showFrom = true);
+			$fechaInicial = new DateTime();
+			$fechaFinal = new DateTime($cuota['Cuota']['vencimiento']);
+
+			if($fechaFinal >= $fechaInicial) {
+				$diferenciaMeses = $fechaFinal->format('m') - $fechaInicial->format('m');
+				if($fechaInicial->format('d') < 10 && $fechaFinal->format('d') >= 10) $diferenciaMeses += 1;	# FIX por si hay un vencimiento entre medio, para que no se pierda.
+
+				for ($i=0; $i < $diferenciaMeses; $i++) {
+					$fechaVencimientoCuota = $fechaInicial->format('10-m-Y');
+					$cuota['Cuota']['vencimiento'] = $this->_formatearFecha($fechaVencimientoCuota); # Se formatea la fecha para guardarla correctamente.
+					$fechaInicial->add(new DateInterval('P1M'));
+					$socios = $this->Cuota->Socio->find('list');
+
+					foreach ($socios as $socioId => $socioName) {
+						$cuota['Cuota']['socio_id'] = $socioId;
+
+						if(!$this->existe($cuota)) {
+							$this->Cuota->create($cuota);
+							$this->Cuota->save($cuota);
+						}
+					}
+				}
+				return $this->redirect(array('action' => 'index'));
+			}
+			$this->Session->setFlash(__('The cuota could not be saved. Please, try again.'));
+		}
+		$socios = $this->Cuota->Socio->find('list');
+		$this->set(compact('socios'));
+	}
+
+/**
+ * existe method
+ * 
+ * @return boolean
+ */
+	public function existe($cuota = null) {
+		if($cuota) {
+			$options['conditions'] = array('Cuota.socio_id' => $cuota['Cuota']['socio_id'], 'Cuota.vencimiento' => $cuota['Cuota']['vencimiento']);
+			$options['recursive'] = -1;
+			$busqueda = $this->Cuota->find('first', $options);
+			return sizeof($busqueda);
+		}
+		throw new Exception("Error Processing Request", 1);
 	}
 
 /**

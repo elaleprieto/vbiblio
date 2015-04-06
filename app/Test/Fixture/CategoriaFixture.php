@@ -1,9 +1,9 @@
 <?php
 /**
- * CategoriasFixture
+ * CategoriaFixture
  *
  */
-class CategoriasFixture extends CakeTestFixture {
+class CategoriaFixture extends CakeTestFixture {
 
 /**
  * Fields
@@ -20,17 +20,17 @@ class CategoriasFixture extends CakeTestFixture {
 		'tableParameters' => array('charset' => 'utf8', 'collate' => 'utf8_general_ci', 'engine' => 'InnoDB')
 	);
 
-// /**
-//  * Records
-//  *
-//  * @var array
-//  */
-// 	public $records = array(
-// 		array(
-// 			'id' => 1,
-// 			'descripcion' => 'Lorem ipsum dolor sit amet',
-// 			'importe' => 1
-// 		),
-// 	);
+/**
+ * Records
+ *
+ * @var array
+ */
+	public $records = array(
+		array(
+			'id' => 1,
+			'descripcion' => 'Lorem ipsum dolor sit amet',
+			'importe' => 1
+		),
+	);
 
-// }
+}

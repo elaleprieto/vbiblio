@@ -7,6 +7,11 @@ App::uses('CuotasController', 'Controller');
  */
 class CuotasControllerTest extends ControllerTestCase {
 
+	// public static function setupBeforeClass() {
+	// 	$this->Cuota = ClassRegistry::init('Cuota');
+	// 	$this->Cuota->query('SET foreign_key_checks = 0;');
+	// }
+
 /**
  * Fixtures
  *
@@ -23,8 +28,15 @@ class CuotasControllerTest extends ControllerTestCase {
 		'app.tipocambio',
 		'app.tipo',
 		'app.tipodoc',
-		'app.cuotasmensual'
+		'app.user',
+		'app.rol'
 	);
+
+	public function setUp() {
+		$this->Cuota->query('SET foreign_key_checks = 0;');
+        parent::setUp();
+        // $this->Article = ClassRegistry::init('Article');
+    }
 
 /**
  * testIndex method
@@ -51,6 +63,15 @@ class CuotasControllerTest extends ControllerTestCase {
  */
 	public function testAdd() {
 		$this->markTestIncomplete('testAdd not implemented.');
+	}
+
+/**
+ * testGenerarTodasHasta method
+ *
+ * @return void
+ */
+	public function testGenerarTodasHasta() {
+		$this->markTestIncomplete('testGenerarTodasHasta not implemented.');
 	}
 
 /**

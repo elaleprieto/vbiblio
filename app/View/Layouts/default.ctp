@@ -61,6 +61,8 @@ $cakeVersion = __d('cake_dev', 'Biblioteca Vigil')
 						<ul class="dropdown-menu">
 							<li><?php echo $this->Html->link('Nuevo', array('controller' => 'cuotas', 'action' => 'add')); ?></li>
 							<li><?php echo $this->Html->link('Listar Cuotas', array('controller' => 'cuotas', 'action' => 'index')); ?></li>
+							<li class="divider">
+							<li><?php echo $this->Html->link('Generar Cuotas', array('controller' => 'cuotas', 'action' => 'generarTodasHasta')); ?></li>
 						</ul>
 					</li>
 					<!-- Recibos -->

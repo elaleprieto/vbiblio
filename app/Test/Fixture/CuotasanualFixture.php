@@ -24,20 +24,20 @@ class CuotasanualFixture extends CakeTestFixture {
 		'tableParameters' => array('charset' => 'utf8', 'collate' => 'utf8_general_ci', 'engine' => 'InnoDB')
 	);
 
-/**
- * Records
- *
- * @var array
- */
-	public $records = array(
-		array(
-			'id' => 1,
-			'fecha' => '2015-02-16',
-			'importe' => 1,
-			'created' => '2015-02-16 18:53:24',
-			'modified' => '2015-02-16 18:53:24',
-			'categorias_id' => 1
-		),
-	);
+// /**
+//  * Records
+//  *
+//  * @var array
+//  */
+// 	public $records = array(
+// 		array(
+// 			'id' => 1,
+// 			'fecha' => '2015-02-16',
+// 			'importe' => 1,
+// 			'created' => '2015-02-16 18:53:24',
+// 			'modified' => '2015-02-16 18:53:24',
+// 			'categorias_id' => 1
+// 		),
+// 	);
 
-}
+// }
